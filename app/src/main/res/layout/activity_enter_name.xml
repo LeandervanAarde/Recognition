@@ -36,7 +36,8 @@
         android:background="@drawable/enternameimage"
         android:orientation="vertical"
         android:padding="20sp"
->
+        >
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -56,15 +57,22 @@
             android:textSize="20sp"
             android:layout_marginBottom="12sp"
             />
-        <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            app:boxCornerRadiusTopEnd="55dp"
-            android:background="@color/white"
-            app:placeholderText="eg. Mr. Potato Hands"
-            android:textAlignment="center"
-            />
 
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                app:boxCornerRadiusTopEnd="25dp"
+                app:boxCornerRadiusTopStart="25dp"
+                app:boxCornerRadiusBottomStart="25dp"
+                app:boxCornerRadiusBottomEnd="25dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Enter Name"
+                    >
+                </com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
         <com.google.android.material.button.MaterialButton
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -75,8 +83,5 @@
             android:text="Let's get quizzical"
             app:cornerRadius="55dp">
         </com.google.android.material.button.MaterialButton>
-
-
     </LinearLayout>
-
 </LinearLayout>
