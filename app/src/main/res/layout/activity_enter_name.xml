@@ -58,21 +58,17 @@
             android:layout_marginBottom="12sp"
             />
 
-            <com.google.android.material.textfield.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="49dp"
-                app:boxCornerRadiusTopEnd="25dp"
-                app:boxCornerRadiusTopStart="25dp"
-                app:boxCornerRadiusBottomStart="25dp"
-                app:boxCornerRadiusBottomEnd="25dp">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:hint="Enter Name"
-                    android:id="@+id/eu_username"/>
+                    android:layout_height="50dp"
+                    android:id="@+id/eu_username"
+                    android:hint="eg. Mr.Potato handz"
+                    android:textColorHint="@color/white"
+                    android:backgroundTint="@color/yellow"
+                    android:textColor="@color/white"/>
 
-            </com.google.android.material.textfield.TextInputLayout>
+
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btn_start"
             android:layout_width="match_parent"

@@ -1,5 +1,6 @@
 package com.example.recognition
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.view.View
@@ -26,6 +27,10 @@ class EnterName : AppCompatActivity() {
             } else{
                 //TODO: navigate to the question pages.
                 Log.i("Welcome to", username.toString())
+                val intent = Intent(this, QuestionsActivity::class.java)
+                intent.putExtra("username", username.toString())
+                startActivity(intent)
+                finish()
             }
         }
     }
