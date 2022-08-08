@@ -22,7 +22,7 @@ class HomeScreen : AppCompatActivity() {
             startActivity(intent)
         }
 
-        binding.btnBack.setOnClickListener{
+        binding.settingsButton.setOnClickListener{
             val intent = Intent(this, Settings::class.java)
             startActivity(intent)
         }

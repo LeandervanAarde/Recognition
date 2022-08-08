@@ -29,11 +29,6 @@
                 android:textAlignment="center"
                 android:textColor="@color/white"/>
 
-            <ImageButton
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:background="@drawable/settings"
-                android:contentDescription="Settings"/>
         </LinearLayout>
 
         <LinearLayout
@@ -62,11 +57,36 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Designed and Developed by Leander van Aarde 2022"
+                android:text="Designed and Developed by Leander van Aarde 2022 https://github.com/LeandervanAarde \n technologies: \n Kotlin \n XML \n Built in: Android studio \n Available on all android devices with OS version 5.1 (Lollipop) \n Version 1.0.0"
                 android:textColor="@color/white"
                 android:textSize="16sp"
                 android:layout_marginBottom="12sp"
+                android:lineHeight="27sp"
                 />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                >
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:src="@drawable/logowhite"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="60dp"
+                android:layout_marginTop="40sp"
+                android:backgroundTint="@color/red"
+                android:text="Reset All Scores"
+                app:cornerRadius="55dp"/>
+
         </LinearLayout>
     </LinearLayout>
 

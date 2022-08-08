@@ -33,5 +33,11 @@ class EnterName : AppCompatActivity() {
                 finish()
             }
         }
+
+        binding.settingsButton.setOnClickListener{
+            val intent = Intent(this, Settings::class.java)
+            startActivity(intent)
+            finish()
+        }
     }
 }
