@@ -22,7 +22,7 @@ class EnterName : AppCompatActivity() {
             Log.i("Clicked", "Confirmed")
             val username = binding.euUsername.text
             if(username.toString() == "" || username.toString() == " "){
-                Toast.makeText(this, "please enter valid username", Toast.LENGTH_LONG).show()
+                Toast.makeText(this, "please enter valid username",Toast.LENGTH_LONG).show()
                 binding.euUsername.error = "Please enter username"
             } else{
                 //TODO: navigate to the question pages.

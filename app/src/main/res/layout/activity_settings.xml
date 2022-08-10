@@ -57,20 +57,20 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Designed and Developed by Leander van Aarde 2022 https://github.com/LeandervanAarde \n technologies: \n Kotlin \n XML \n Built in: Android studio \n Available on all android devices with OS version 5.1 (Lollipop) \n Version 1.0.0"
+                android:text="Designed and Developed by Leander van Aarde 2022 \n https://github.com/LeandervanAarde \n technologies: \n Kotlin \n XML \n Built in: Android studio \n Available on all android devices with OS version 5.1 (Lollipop) \n Version 1.0.0"
                 android:textColor="@color/white"
-                android:textSize="16sp"
+                android:textSize="14sp"
                 android:layout_marginBottom="12sp"
-                android:lineHeight="27sp"
+                android:lineHeight="25sp"
                 />
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
-                android:layout_height="150dp"
+                android:layout_height="100dp"
                 >
                 <ImageView
-                    android:layout_width="150dp"
-                    android:layout_height="150dp"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -80,7 +80,7 @@
 
             <com.google.android.material.button.MaterialButton
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="60dp"
                 android:minHeight="60dp"
                 android:layout_marginTop="40sp"
                 android:backgroundTint="@color/red"
