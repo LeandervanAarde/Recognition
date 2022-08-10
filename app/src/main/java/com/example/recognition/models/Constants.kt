@@ -2,13 +2,11 @@ package com.example.recognition.models
 
 object Constants {
 
-    fun getAllQuestions(): ArrayList<Question>{
-        val AllQuestions = ArrayList<Question>()
+    fun getMemeQuestions(): ArrayList<Question>{
+        val MemeQuestions = ArrayList<Question>()
 
         val QuestionOne = Question(
             1,
-            "Memes",
-
             "What is this meme generally associated with?",
             "Being an intellectual",
             "Hillbillies",
@@ -16,8 +14,19 @@ object Constants {
             "Spongebob, obviously"
         )
 
-        AllQuestions.add(QuestionOne)
+        val QuestionTwo = Question(
+            2,
+            "What does this meme stand for?",
+            "an Interest in another aspect",
+            "This guy is whistling",
+            "Looking for ticks.",
+            "Meaningless"
+        )
 
-        return AllQuestions
+        MemeQuestions.add(QuestionOne)
+        MemeQuestions.add(QuestionTwo)
+
+        return MemeQuestions
     }
+
 }

@@ -7,7 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.example.recognition.databinding.ActivityHomeScreenBinding
 import com.example.recognition.models.Category
 import com.example.recognition.models.CategoryConstants.getAllCategories
-
+import com.example.recognition.models.Constants.getMemeQuestions
 
 class HomeScreen : AppCompatActivity() {
     private lateinit var binding: ActivityHomeScreenBinding
@@ -20,6 +20,7 @@ class HomeScreen : AppCompatActivity() {
         binding = ActivityHomeScreenBinding.inflate(layoutInflater)
         setContentView(binding.root)
         val categories = getAllCategories()
+        val memeQs = getMemeQuestions()
         val categoryOne = categories[0]
         setCategories(categoryOne)
 
@@ -28,6 +29,7 @@ class HomeScreen : AppCompatActivity() {
             startActivity(intent)
         }
 
+
         binding.settingsButton.setOnClickListener{
             val intent = Intent(this, Settings::class.java)
             startActivity(intent)
@@ -35,10 +37,10 @@ class HomeScreen : AppCompatActivity() {
     }
 
     fun setCategories(CategoryName: Category){
+        val questionLength = getMemeQuestions()
         binding.categoryOneName.text = CategoryName.CategoryText
         binding.highScore.text = CategoryName.HighScore.toString()
-        binding.questions.text = CategoryName.Questions.toString()
-
+        binding.questions.text = questionLength.count().toString()
     }
 }
 

@@ -7,7 +7,7 @@ object CategoryConstants {
             1,
             "Memes",
             0,
-            5
+            0
         )
 
         val CategoryTwo = Category(
