@@ -3,12 +3,11 @@ package com.example.recognition.models
 object CategoryConstants {
     fun getAllCategories (): ArrayList<Category>{
         var allCategories = ArrayList<Category>()
-
         val CategoryOne = Category(
             1,
             "Memes",
             0,
-            5,
+            5
         )
 
         val CategoryTwo = Category(
@@ -23,7 +22,6 @@ object CategoryConstants {
             "Movies and Tv",
             0,
             5
-
         )
 
         val CategoryFour = Category(
@@ -37,14 +35,17 @@ object CategoryConstants {
             5,
             "Logos",
             0,
-            0,
+            0
         )
-        
+
+        // Add all the categories
         allCategories.add(CategoryOne)
         allCategories.add(CategoryTwo)
         allCategories.add(CategoryThree)
         allCategories.add(CategoryFour)
         allCategories.add(CategoryFive)
+
+        // Returns all of the data
         return allCategories
     }
 }

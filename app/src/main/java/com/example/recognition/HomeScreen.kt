@@ -5,6 +5,9 @@ import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import com.example.recognition.databinding.ActivityHomeScreenBinding
+import com.example.recognition.models.Category
+import com.example.recognition.models.CategoryConstants.getAllCategories
+
 
 class HomeScreen : AppCompatActivity() {
     private lateinit var binding: ActivityHomeScreenBinding
@@ -16,6 +19,9 @@ class HomeScreen : AppCompatActivity() {
         setContentView(R.layout.activity_home_screen)
         binding = ActivityHomeScreenBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        val categories = getAllCategories()
+        val categoryOne = categories[0]
+        setCategories(categoryOne)
 
         binding.cdCategoryOne.setOnClickListener{
             val intent = Intent(this, EnterName::class.java )
@@ -27,4 +33,12 @@ class HomeScreen : AppCompatActivity() {
             startActivity(intent)
         }
     }
+
+    fun setCategories(CategoryName: Category){
+        binding.categoryOneName.text = CategoryName.CategoryText
+        binding.highScore.text = CategoryName.HighScore.toString()
+        binding.questions.text = CategoryName.Questions.toString()
+
+    }
 }
+

@@ -5,4 +5,4 @@ data class Category (
     val CategoryText: String,
     val HighScore: Int,
     val Questions: Int
-        )
+    )
