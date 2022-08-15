@@ -19,7 +19,7 @@ class QuestionsActivity : AppCompatActivity() {
         val username = intent.getStringExtra("username").toString()
         val category = intent.getStringExtra("Category").toString()
         Log.i("the Namey be", username)
-
+        Log.i("Category Name", category)
 
         window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_FULLSCREEN
         actionBar?.hide()
@@ -27,11 +27,10 @@ class QuestionsActivity : AppCompatActivity() {
 
         binding.settingsButton.setOnClickListener{
             val intent = Intent(this, Settings::class.java)
+
             startActivity(intent)
             finish()
         }
-
-
 
         //TODO: Set up a timer for each Question
         object : CountDownTimer(30000,1000){

@@ -20,6 +20,7 @@ class EnterName : AppCompatActivity() {
         val category = intent.getStringExtra("Category").toString()
         Log.i("The category is", category)
 
+
         binding.btnStart.setOnClickListener{
             Log.i("Clicked", "Confirmed")
             val username = binding.euUsername.text
@@ -31,6 +32,7 @@ class EnterName : AppCompatActivity() {
                 Log.i("Welcome to", username.toString())
                 val intent = Intent(this, QuestionsActivity::class.java)
                 intent.putExtra("username", username.toString())
+                intent.putExtra("Category", "${category}")
                 startActivity(intent)
                 finish()
             }

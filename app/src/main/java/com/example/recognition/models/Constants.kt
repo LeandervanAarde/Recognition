@@ -313,7 +313,6 @@ object Constants {
         return CelebrityQuestions
     }
 
-
     fun LogoQuestions(): ArrayList <Question> {
         val logoQuestion = ArrayList<Question>()
         val QuestionOne = Question(
