@@ -17,8 +17,10 @@ class QuestionsActivity : AppCompatActivity() {
         setContentView(binding.root)
         //Get the extra data from the extra intent
         val username = intent.getStringExtra("username").toString()
-
+        val category = intent.getStringExtra("Category").toString()
         Log.i("the Namey be", username)
+
+
         window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_FULLSCREEN
         actionBar?.hide()
         updateUI(username)
@@ -28,6 +30,8 @@ class QuestionsActivity : AppCompatActivity() {
             startActivity(intent)
             finish()
         }
+
+
 
         //TODO: Set up a timer for each Question
         object : CountDownTimer(30000,1000){

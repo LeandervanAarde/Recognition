@@ -17,6 +17,8 @@ class EnterName : AppCompatActivity() {
         setContentView(R.layout.activity_enter_name)
         binding = ActivityEnterNameBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        val category = intent.getStringExtra("Category").toString()
+        Log.i("The category is", category)
 
         binding.btnStart.setOnClickListener{
             Log.i("Clicked", "Confirmed")
