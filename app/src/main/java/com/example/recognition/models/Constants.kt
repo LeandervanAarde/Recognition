@@ -7,7 +7,7 @@ object Constants {
 
         val QuestionOne = Question(
             1,
-            "What is this meme generally associated with?",
+            "What is this meme generally associated with hm?",
             "Being an intellectual",
             "Hillbillies",
             "WiTh BeInG sTuPiD",
@@ -27,7 +27,8 @@ object Constants {
             3,
             "What caption does this meme usually have?",
             "Not sure if...",
-            "can't tell if...", "It might not be...",
+            "can't tell if...",
+            "It might not be...",
             "Take my money!"
         )
 

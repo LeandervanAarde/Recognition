@@ -44,7 +44,7 @@
         android:id="@+id/nameText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Okay name, what is generally associated with this meme?"
+        android:text="Question here"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="20dp"
@@ -159,6 +159,7 @@
         android:gravity="center">
 
         <com.google.android.material.button.MaterialButton
+            android:id="@+id/answerOne"
             android:layout_width="match_parent"
             android:layout_height="65dp"
             android:backgroundTint="@color/yellow"
@@ -166,24 +167,25 @@
             app:cornerRadius="12dp" />
 
         <com.google.android.material.button.MaterialButton
+            android:id="@+id/answerTwo"
             android:layout_width="match_parent"
             android:layout_height="65dp"
             app:cornerRadius="12dp"
             android:text="Option Two"
             android:backgroundTint="@color/yellow"/>
         <com.google.android.material.button.MaterialButton
+            android:id="@+id/answerThree"
             android:layout_width="match_parent"
             android:layout_height="65dp"
             app:cornerRadius="12dp"
             android:text="Option Three"
             android:backgroundTint="@color/yellow"/>
         <com.google.android.material.button.MaterialButton
+            android:id="@+id/answerFour"
             android:layout_width="match_parent"
             android:layout_height="65dp"
             app:cornerRadius="12dp"
             android:text="Option Four"
             android:backgroundTint="@color/yellow"/>
     </LinearLayout>
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>
