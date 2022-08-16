@@ -1,5 +1,5 @@
 package com.example.recognition
-
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.view.View
@@ -17,5 +17,12 @@ class ResultsActivity : AppCompatActivity() {
 
         val category = intent.getStringExtra("Category").toString()
         Log.i("CATEGORY", category)
+        intent.putExtra("Category", category)
+
+        binding.goHome.setOnClickListener{
+            val intent = Intent(this, HomeScreen::class.java)
+            startActivity(intent)
+            finish()
+        }
     }
 }

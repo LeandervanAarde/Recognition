@@ -118,7 +118,6 @@
                         android:textSize="18dp" />
                 </LinearLayout>
 
-
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -151,35 +150,20 @@
             app:layout_constraintTop_toBottomOf="@+id/scrollView2"
             android:gravity="center">
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center">
+                android:gravity="center"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp">
                 <com.google.android.material.button.MaterialButton
+                    android:id="@+id/goHome"
                     android:height="55dp"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Back to Categories"
                     app:cornerRadius="55dp"
                     android:backgroundTint="@color/red"/>
             </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="40sp">
-                <com.google.android.material.button.MaterialButton
-                    android:height="55dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:backgroundTint="@color/green"
-                    android:text="Try Again"
-                    android:textColor="@color/white"
-                    app:cornerRadius="55dp" />
-            </LinearLayout>
-
-
-
         </LinearLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
-
 </androidx.constraintlayout.widget.ConstraintLayout>

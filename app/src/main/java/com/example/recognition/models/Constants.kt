@@ -8,9 +8,9 @@ object Constants {
         val QuestionOne = Question(
             1,
             "What is this meme generally associated with hm?",
-            "Being an intellectual",
-            "Hillbillies",
             "WiTh BeInG sTuPiD",
+            "Hillbillies",
+            "Being an intellectual",
             "Spongebob, obviously"
         )
 

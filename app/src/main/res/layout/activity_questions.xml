@@ -147,6 +147,7 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <LinearLayout
+        android:id="@+id/group"
         android:layout_width="match_parent"
         android:layout_height="280dp"
         app:layout_constraintBottom_toBottomOf="parent"
