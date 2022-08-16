@@ -354,7 +354,7 @@ object Constants {
 
         val QuestionFive = Question(
             5,
-            "Whatsapp",
+            "What company does this Logo Belong to?",
             "Facebook",
             "Twitter",
             "Instagram",
