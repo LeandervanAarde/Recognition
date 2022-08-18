@@ -12,7 +12,7 @@
 <!-- HEADER SECTION -->
 <h3 align="center" style="padding:0;margin:0;">Leander van Aarde</h3>
 <h5 align="center" style="padding:0;margin:0;">200211</h5>
-<h6 align="center">DV200 - Term 2 CDE BOOKING  | 2022</h6>
+<h6 align="center">Android 203 | 2022</h6>
 </br>
 <p align="center">
 
@@ -22,20 +22,20 @@
 
 <!-- https://drive.google.com/file/d/19JkfDgvGLzHQ1AVMvgv9rLTFR0HzJBVq/view?usp=sharing -->
   
-  <h3 align="center">CDE Management system</h3>
+  <h3 align="center">Recognition mobile trivia Application</h3>
 
   <p align="center">
-    This is a project that has been "built" for the CDE as a way for Receptionists to manage appointment, Doctor and patients that are involved with the CDE. 
+  A Trivia Application for Android cellphones, build with Kotlin and in Android Studio!
     <br />
-    <p align="center"> Find the official website for the Center of Diabetes and Endocrinology : <a href="https://www.cdediabetes.co.za/"> here</a> </p>
+
    <br />
    <br />
    <a href="path/to/demonstration/video">View Demo</a> 
    <!-- INSERT UP UP -->
     ·
-    <a href="https://github.com/LeandervanAarde/cde-booking/issues">Report Bug</a>
+    <a href="https://github.com/LeandervanAarde/Recognition/issues">Report Bug</a>
     ·
-    <a href="https://github.com/LeandervanAarde/cde-booking/issues">Request Feature</a>
+    <a href="https://github.com/LeandervanAarde/Recognition/issues">Request Feature</a>
 </p>
 <!-- TABLE OF CONTENTS -->
 
@@ -73,18 +73,13 @@
 
 ### Project Description
 
-Welcome to the CDE program, 
-This web based application is a management system that allows Receptionists to manage the adminstration of the CDE Doctors office, managing patients, Doctors, Receptionist and appointments. The aim of this applicatiion was to learn the fundamentals of CRUD functioinallity in PHP and apply it to REACT. It is also aimed at giving Receptionists a user-friendly experience and an easy way to manage a booking portal. 
+<p>Welcome to Recognition! a trivia application that has been built for Android devices, more specifically Cellphones. This application is set out to challenge your knowledge on entertainment related subjects such as memes, celebreties and movies! Recognition tests your ability to remember things based on a visual, thus the name "Recognition" </p>
 
 ### Built With
-* [SASS](https://sass-lang.com/)
-* [React](https://reactjs.org/)
-* [Socket.io](https://socket.io/)
-* [Express](https://expressjs.com/)
-* [Axios](https://axios-http.com/docs/intro)
-* [React Icons](https://react-icons.github.io/react-icons/)
-* [Bootstrap](https://getbootstrap.com/)
-* [MomentJS](https://momentjs.com/)
+* [Android Studio](https://sass-lang.com/)
+* [XML](https://reactjs.org/)
+* [Kotlin](https://socket.io/)
+
 
 <!-- GETTING STARTED -->
 <!-- Make sure to add appropriate information about what prerequesite technologies the user would need and also the steps to install your project on their own mashines -->
