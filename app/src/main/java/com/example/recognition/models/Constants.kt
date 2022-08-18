@@ -1,5 +1,7 @@
 package com.example.recognition.models
 
+import com.example.recognition.R
+
 object Constants {
 
     fun getMemeQuestions(): ArrayList<Question>{
@@ -8,6 +10,7 @@ object Constants {
         val QuestionOne = Question(
             1,
             "What is this meme generally associated with hm?",
+            R.drawable.download,
             "WiTh BeInG sTuPiD",
             "Hillbillies",
             "Being an intellectual",
@@ -17,6 +20,7 @@ object Constants {
         val QuestionTwo = Question(
             2,
             "What does this meme stand for?",
+            R.drawable.guylookingback,
             "an Interest in another aspect",
             "This guy is whistling",
             "Looking for ticks.",
@@ -26,6 +30,7 @@ object Constants {
         val QuestionThree = Question(
             3,
             "What caption does this meme usually have?",
+            R.drawable.frymeme,
             "Not sure if...",
             "can't tell if...",
             "It might not be...",
@@ -35,6 +40,7 @@ object Constants {
         val QuestionFour = Question(
             4,
             "Who is this monke?",
+            R.drawable.harambemonkey,
             "Harambe",
             "Harembae",
             "MonkeyMan",
@@ -44,6 +50,7 @@ object Constants {
         val QuestionFive = Question(
             5,
             "Who needs to wake up?",
+            R.drawable.chrissywakeup,
             "Chrissy",
             "Eleven",
             "John Cena",
@@ -53,6 +60,7 @@ object Constants {
         val QuestionSix = Question(
             5,
             "What is her catchPhrase?",
+            R.drawable.cashmeoutside,
             "Catch me outside how 'bout dat?",
             "Dr. Phil can go away",
             "I hate my mom",
@@ -77,6 +85,7 @@ object Constants {
         val QuestionOne = Question(
             1,
             "What is this Rappers birth name?",
+            R.drawable.snoop,
             "Calvin Cordozar Broadus Jr.",
             "Cameron Jibril Thomaz",
             "Willard Carroll",
@@ -86,6 +95,7 @@ object Constants {
         val QuestionTwo = Question(
             2,
             "How old was Britney Spears when her hit song ‘Baby One More Time’ came out in 1998? ",
+            R.drawable.britney,
             "17",
             "18",
             "24",
@@ -95,6 +105,7 @@ object Constants {
         val QuestionThree = Question(
             3,
             "Which tool-themed MC won best rap video and best dance video at the 1990 MTV Video Music Awards?",
+            R.drawable.mchammer,
             "MC Hammer",
             "Eminem.",
             "Tupac",
@@ -104,6 +115,7 @@ object Constants {
         val QuestionFour = Question(
             4,
             "Justin Timberlake wrote what 2002 hit after breaking up with Britney Spears? ",
+            R.drawable.justint,
             "Cry me a river",
             "Like I love you",
             "Take it from here",
@@ -113,6 +125,7 @@ object Constants {
         val QuestionFive = Question(
             5,
             "I kissed a girl came out in what year?",
+            R.drawable.ikissedagirl,
             "2008",
             "2007",
             "2006",
@@ -122,6 +135,7 @@ object Constants {
         val QuestionSix = Question(
             6,
             "Eminem's 8 Mile is named after a road in which city?",
+            R.drawable.eminem,
             "Detroit",
             "Michigan",
             "Cleveland",
@@ -131,6 +145,7 @@ object Constants {
         val QuestionSeven = Question(
             7,
             "Who sang the Spongebob Squarepants theme song for the movie?",
+            R.drawable.spongebok,
             "Avril Lavigne",
             "Britney Spears",
             "Alicia Keys",
@@ -156,6 +171,7 @@ object Constants {
         val QuestionOne = Question(
             1,
             "What does Michael Scott eat for lunch on The Office that makes him fall asleep?",
+            R.drawable.michaelscott,
             "An entire Casserole",
             "4 pizzas",
             "An entire chicken pot Pie",
@@ -165,6 +181,7 @@ object Constants {
         val QuestionTwo = Question(
             2,
             "South Park takes place in which state?",
+            R.drawable.southpark,
             "Wisconsin",
             "Minnesota",
             "Colorado",
@@ -174,6 +191,7 @@ object Constants {
         val QuestionThree = Question(
             3,
             "Who was Bart Simpson's teacher?",
+            R.drawable.bartsimpson,
             "Ned Flanders",
             "Principal Skinner",
             "Mrs. Krabappel",
@@ -182,7 +200,8 @@ object Constants {
 
         val QuestionFour = Question(
             4,
-            "Which of the core male That '70s Show characters is the only one who never dated Jackie Burkhart?",
+            "Which of the core male from That '70s Show characters is the only one who never dated Jackie Burkhart?",
+            R.drawable.jackie,
             "Hyde",
             "Fes",
             "Eric",
@@ -192,6 +211,7 @@ object Constants {
         val QuestionFive = Question(
             5,
             "How did Charlie Sheen's character Charlie Harper die in Two And A Half Men?",
+            R.drawable.charlieharper,
             "Overdose",
             "Sickness",
             "Pushed infront of a train",
@@ -201,6 +221,7 @@ object Constants {
         val QuestionSix = Question(
             6,
             "On The Big Bang Theory, Penny is a waitress at which restaurant?",
+            R.drawable.penny,
             "McDonalds",
             "Olive garden",
             "Cheesecake Factory",
@@ -210,6 +231,7 @@ object Constants {
         val QuestionSeven = Question(
             7,
             "What was the name of Ron Burgundy's channel in Anchorman?",
+            R.drawable.ronburgundy,
             "Channel 9",
             "Channel 5",
             "Channel 4",
@@ -219,6 +241,7 @@ object Constants {
         val QuestionEight = Question(
             8,
             "What is the name of Winston's cat in New Girl?",
+            R.drawable.fergusoncat,
             "Spotty",
             "Ferry",
             "Ferguson",
@@ -243,6 +266,7 @@ object Constants {
         val QuestionOne = Question(
             1,
             "What was Justin Bieber arrested for in 2013?",
+            R.drawable.justint,
             "Speeding",
             "Fighting",
             "He was not arrested in 2013",
@@ -252,6 +276,7 @@ object Constants {
         val QuestionTwo = Question(
             2,
             "Michael Jordan starred in what movie?",
+            R.drawable.michaelj,
             "Coach Carter",
             "Semi pro",
             "Love & basketball",
@@ -261,6 +286,7 @@ object Constants {
         val QuestionThree = Question(
             3,
             "Daniel Radcliffe was the lead of what movie?",
+            R.drawable.danielleradc,
             "Fantastic beasts and where to find them",
             "Lord of the rings",
             "Split",
@@ -270,6 +296,7 @@ object Constants {
         val QuestionFour = Question(
             4,
             "How did Eminem come up with the name Slim Shady?",
+            R.drawable.slimshady,
             "it was always a nickname",
             "While he was at a bar",
             "While reading a comic book",
@@ -279,6 +306,7 @@ object Constants {
         val QuestionFive = Question(
             5,
             "How many movies has Will Ferrel been in?",
+            R.drawable.willf,
             "12",
             "125",
             "50",
@@ -288,19 +316,11 @@ object Constants {
         val QuestionSix = Question(
             6,
             "What is the alternative name for Mickey Mouse?",
+            R.drawable.mickeym,
             "Michael Mouse",
             "There are none",
             "Mick mouse",
             "Mortimer Mouse"
-        )
-
-        val QuestionSeven = Question(
-            7,
-            "What was the name of Ron Burgundy's channel in Anchorman?",
-            "Channel 9",
-            "Channel 5",
-            "Channel 4",
-            "Channel 2"
         )
 
         CelebrityQuestions.add(QuestionOne)
@@ -309,7 +329,6 @@ object Constants {
         CelebrityQuestions.add(QuestionFour)
         CelebrityQuestions.add(QuestionFive)
         CelebrityQuestions.add(QuestionSix)
-        CelebrityQuestions.add(QuestionSeven)
 
         return CelebrityQuestions
     }
@@ -319,6 +338,7 @@ object Constants {
         val QuestionOne = Question(
             1,
             "What company does this Logo Belong to?",
+            R.drawable.mcdonalds,
             "KFC",
             "McDonalds",
             "Taco Bell",
@@ -328,15 +348,17 @@ object Constants {
         val QuestionTwo = Question(
             2,
             "What company does this Logo Belong to?",
+            R.drawable.jeep,
             "John Deere",
-            "Safari and Outdoor",
+            "Jeep",
             "Old Khaki",
-            "Jeep"
+            "Safari and Outdoor"
         )
 
         val QuestionThree = Question(
             3,
             "What company does this Logo Belong to?",
+            R.drawable.dreamworks,
             "20th Century Fox",
             "DreamWorks",
             "Pixar",
@@ -346,6 +368,7 @@ object Constants {
         val QuestionFour = Question(
             4,
             "What company does this Logo Belong to?",
+            R.drawable.apple,
             "Beats",
             "Apple",
             "Nike",
@@ -355,6 +378,7 @@ object Constants {
         val QuestionFive = Question(
             5,
             "What company does this Logo Belong to?",
+            R.drawable.twitter,
             "Facebook",
             "Twitter",
             "Instagram",

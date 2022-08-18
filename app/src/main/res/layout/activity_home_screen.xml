@@ -64,6 +64,7 @@
                 android:layout_marginLeft="5dp"
                 app:cardCornerRadius="55sp">
                 <ImageView
+                    android:id="@+id/imageone"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:src="@drawable/download"
@@ -139,6 +140,7 @@
                 android:layout_marginLeft="5dp"
                 app:cardCornerRadius="55sp">
                 <ImageView
+                    android:id="@+id/imagetwo"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:src="@drawable/download"
@@ -213,6 +215,7 @@
                 android:layout_marginLeft="5dp"
                 app:cardCornerRadius="55sp">
                 <ImageView
+                    android:id="@+id/imagethree"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:src="@drawable/download"
@@ -287,6 +290,7 @@
                 android:layout_marginLeft="5dp"
                 app:cardCornerRadius="55sp">
                 <ImageView
+                    android:id="@+id/imagefour"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:src="@drawable/download"
@@ -362,6 +366,7 @@
                 android:layout_marginLeft="5dp"
                 app:cardCornerRadius="55sp">
                 <ImageView
+                    android:id="@+id/imagefive"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:src="@drawable/download"

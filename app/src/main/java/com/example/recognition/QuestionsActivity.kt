@@ -23,7 +23,6 @@ class QuestionsActivity : AppCompatActivity() {
         setContentView(binding.root)
         val username = intent.getStringExtra("username").toString()
         val category = intent.getStringExtra("Category").toString()
-        var currentScore = intent.getIntExtra("CurrentScore:", 0)
 
         Log.i("Category Name", category)
         window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_FULLSCREEN
@@ -56,11 +55,10 @@ class QuestionsActivity : AppCompatActivity() {
                         startActivity(intent)
                         finish()
                     }
-                    Log.i("Score", "${currentScore}/${questions.count()}")
                 }
                 binding.answerTwo.setOnClickListener{
                     binding.answerTwo.setBackgroundColor(Color.parseColor("#EE3A57"))
-                    currentScore = currentScore
+                    currentScore += 0
                     if(questionNumber+1 == questions.count()){
                         val intent = Intent(this, ResultsActivity::class.java)
                         intent.putExtra("Category", category)
@@ -77,13 +75,15 @@ class QuestionsActivity : AppCompatActivity() {
                         startActivity(intent)
                         finish()
                     }
-                    Log.i("Score", "${currentScore}/${questions.count()}")
                 }
                 binding.answerThree.setOnClickListener{
                     binding.answerThree.setBackgroundColor(Color.parseColor("#EE3A57"))
+                    currentScore += 0
                     if(questionNumber+1 == questions.count()){
                         val intent = Intent(this, ResultsActivity::class.java)
                         intent.putExtra("Category", category)
+                        intent.putExtra("username", username)
+                        intent.putExtra("currentScore", currentScore)
                         startActivity(intent)
                         finish()
                     } else{
@@ -91,15 +91,19 @@ class QuestionsActivity : AppCompatActivity() {
                         intent.putExtra("number", questionNumber+1)
                         intent.putExtra("Category", category)
                         intent.putExtra("username", username)
+                        intent.putExtra("currentScore", currentScore)
                         startActivity(intent)
                         finish()
                     }
                 }
                 binding.answerFour.setOnClickListener{
                     binding.answerFour.setBackgroundColor(Color.parseColor("#EE3A57"))
+                    currentScore += 0
                     if(questionNumber+1 == questions.count()){
                         val intent = Intent(this, ResultsActivity::class.java)
                         intent.putExtra("Category", category)
+                        intent.putExtra("username", username)
+                        intent.putExtra("currentScore", currentScore)
                         startActivity(intent)
                         finish()
                     } else{
@@ -107,20 +111,28 @@ class QuestionsActivity : AppCompatActivity() {
                         intent.putExtra("number", questionNumber+1)
                         intent.putExtra("Category", category)
                         intent.putExtra("username", username)
+                        intent.putExtra("currentScore", currentScore)
                         startActivity(intent)
                         finish()
                     }
                 }
+                Log.i("Score", "${currentScore}/${questions.count()}")
             }
             "Music" -> {
                 val questions = getMusicQuestions()
                 var questionNumber = intent.getIntExtra("number", 0)
                 val currQuestion = questions[questionNumber]
+                var currentScore = intent.getIntExtra("currentScore", 0)
                 updateUI(username, currQuestion)
+
                 binding.answerOne.setOnClickListener{
+                    currentScore += 1
+                    binding.answerOne.setBackgroundColor(Color.parseColor("#64CB40"))
                     if(questionNumber+1 == questions.count()){
                         val intent = Intent(this, ResultsActivity::class.java)
                         intent.putExtra("Category", category)
+                        intent.putExtra("currentScore", currentScore)
+                        intent.putExtra("username", username)
                         startActivity(intent)
                         finish()
                     } else{
@@ -128,14 +140,39 @@ class QuestionsActivity : AppCompatActivity() {
                         intent.putExtra("number", questionNumber+1)
                         intent.putExtra("Category", category)
                         intent.putExtra("username", username)
+                        intent.putExtra("currentScore", currentScore)
+                        startActivity(intent)
+                        finish()
+                    }
+                }
+                binding.answerTwo.setOnClickListener{
+                    binding.answerTwo.setBackgroundColor(Color.parseColor("#EE3A57"))
+                    currentScore += 0
+                    if(questionNumber+1 == questions.count()){
+                        val intent = Intent(this, ResultsActivity::class.java)
+                        intent.putExtra("Category", category)
+                        intent.putExtra("username", username)
+                        intent.putExtra("currentScore", currentScore)
+                        startActivity(intent)
+                        finish()
+                    } else{
+                        val intent = Intent(this, QuestionsActivity::class.java)
+                        intent.putExtra("number", questionNumber+1)
+                        intent.putExtra("Category", category)
+                        intent.putExtra("username", username)
+                        intent.putExtra("currentScore", currentScore)
                         startActivity(intent)
                         finish()
                     }
                 }
                 binding.answerThree.setOnClickListener{
+                    binding.answerThree.setBackgroundColor(Color.parseColor("#EE3A57"))
+                    currentScore += 0
                     if(questionNumber+1 == questions.count()){
                         val intent = Intent(this, ResultsActivity::class.java)
                         intent.putExtra("Category", category)
+                        intent.putExtra("username", username)
+                        intent.putExtra("currentScore", currentScore)
                         startActivity(intent)
                         finish()
                     } else{
@@ -143,14 +180,19 @@ class QuestionsActivity : AppCompatActivity() {
                         intent.putExtra("number", questionNumber+1)
                         intent.putExtra("Category", category)
                         intent.putExtra("username", username)
+                        intent.putExtra("currentScore", currentScore)
                         startActivity(intent)
                         finish()
                     }
                 }
                 binding.answerFour.setOnClickListener{
+                    binding.answerFour.setBackgroundColor(Color.parseColor("#EE3A57"))
+                    currentScore += 0
                     if(questionNumber+1 == questions.count()){
                         val intent = Intent(this, ResultsActivity::class.java)
                         intent.putExtra("Category", category)
+                        intent.putExtra("username", username)
+                        intent.putExtra("currentScore", currentScore)
                         startActivity(intent)
                         finish()
                     } else{
@@ -158,21 +200,28 @@ class QuestionsActivity : AppCompatActivity() {
                         intent.putExtra("number", questionNumber+1)
                         intent.putExtra("Category", category)
                         intent.putExtra("username", username)
+                        intent.putExtra("currentScore", currentScore)
                         startActivity(intent)
                         finish()
                     }
                 }
+                Log.i("Score", "${currentScore}/${questions.count()}")
             }
             "Movies and Tv" -> {
                 val questions = getTvQuestions()
                 var questionNumber = intent.getIntExtra("number", 0)
                 val currQuestion = questions[questionNumber]
+                var currentScore = intent.getIntExtra("currentScore", 0)
                 updateUI(username, currQuestion)
-                binding.answerOne.setOnClickListener{
-                    if(questionNumber+1 == questions.count()){
 
+                binding.answerThree.setOnClickListener{
+                    currentScore += 1
+                    binding.answerThree.setBackgroundColor(Color.parseColor("#64CB40"))
+                    if(questionNumber+1 == questions.count()){
                         val intent = Intent(this, ResultsActivity::class.java)
                         intent.putExtra("Category", category)
+                        intent.putExtra("currentScore", currentScore)
+                        intent.putExtra("username", username)
                         startActivity(intent)
                         finish()
                     } else{
@@ -180,14 +229,19 @@ class QuestionsActivity : AppCompatActivity() {
                         intent.putExtra("number", questionNumber+1)
                         intent.putExtra("Category", category)
                         intent.putExtra("username", username)
+                        intent.putExtra("currentScore", currentScore)
                         startActivity(intent)
                         finish()
                     }
                 }
-                binding.answerThree.setOnClickListener{
+                binding.answerTwo.setOnClickListener{
+                    binding.answerTwo.setBackgroundColor(Color.parseColor("#EE3A57"))
+                    currentScore += 0
                     if(questionNumber+1 == questions.count()){
                         val intent = Intent(this, ResultsActivity::class.java)
                         intent.putExtra("Category", category)
+                        intent.putExtra("username", username)
+                        intent.putExtra("currentScore", currentScore)
                         startActivity(intent)
                         finish()
                     } else{
@@ -195,14 +249,39 @@ class QuestionsActivity : AppCompatActivity() {
                         intent.putExtra("number", questionNumber+1)
                         intent.putExtra("Category", category)
                         intent.putExtra("username", username)
+                        intent.putExtra("currentScore", currentScore)
+                        startActivity(intent)
+                        finish()
+                    }
+                }
+                binding.answerOne.setOnClickListener{
+                    binding.answerOne.setBackgroundColor(Color.parseColor("#EE3A57"))
+                    currentScore += 0
+                    if(questionNumber+1 == questions.count()){
+                        val intent = Intent(this, ResultsActivity::class.java)
+                        intent.putExtra("Category", category)
+                        intent.putExtra("username", username)
+                        intent.putExtra("currentScore", currentScore)
+                        startActivity(intent)
+                        finish()
+                    } else{
+                        val intent = Intent(this, QuestionsActivity::class.java)
+                        intent.putExtra("number", questionNumber+1)
+                        intent.putExtra("Category", category)
+                        intent.putExtra("username", username)
+                        intent.putExtra("currentScore", currentScore)
                         startActivity(intent)
                         finish()
                     }
                 }
                 binding.answerFour.setOnClickListener{
+                    binding.answerFour.setBackgroundColor(Color.parseColor("#EE3A57"))
+                    currentScore += 0
                     if(questionNumber+1 == questions.count()){
                         val intent = Intent(this, ResultsActivity::class.java)
                         intent.putExtra("Category", category)
+                        intent.putExtra("username", username)
+                        intent.putExtra("currentScore", currentScore)
                         startActivity(intent)
                         finish()
                     } else{
@@ -210,52 +289,28 @@ class QuestionsActivity : AppCompatActivity() {
                         intent.putExtra("number", questionNumber+1)
                         intent.putExtra("Category", category)
                         intent.putExtra("username", username)
+                        intent.putExtra("currentScore", currentScore)
                         startActivity(intent)
                         finish()
                     }
                 }
+                Log.i("Score", "${currentScore}/${questions.count()}")
             }
             "Celebrities" -> {
                 val questions = getAllCelebQuestions()
                 var questionNumber = intent.getIntExtra("number", 0)
                 val currQuestion = questions[questionNumber]
+                var currentScore = intent.getIntExtra("currentScore", 0)
                 updateUI(username, currQuestion)
-                binding.answerOne.setOnClickListener{
-                    if(questionNumber+1 == questions.count()){
-                        val intent = Intent(this, ResultsActivity::class.java)
-                        intent.putExtra("Category", category)
-                        startActivity(intent)
-                        finish()
-                    } else{
-                        val intent = Intent(this, QuestionsActivity::class.java)
-                        intent.putExtra("number", questionNumber+1)
-                        intent.putExtra("Category", category)
-                        intent.putExtra("username", username)
-                        startActivity(intent)
-                        finish()
-                    }
-                }
-
-                binding.answerThree.setOnClickListener{
-                    if(questionNumber+1 == questions.count()){
-                        val intent = Intent(this, ResultsActivity::class.java)
-                        intent.putExtra("Category", category)
-                        startActivity(intent)
-                        finish()
-                    } else{
-                        val intent = Intent(this, QuestionsActivity::class.java)
-                        intent.putExtra("number", questionNumber+1)
-                        intent.putExtra("Category", category)
-                        intent.putExtra("username", username)
-                        startActivity(intent)
-                        finish()
-                    }
-                }
 
                 binding.answerFour.setOnClickListener{
+                    currentScore += 1
+                    binding.answerFour.setBackgroundColor(Color.parseColor("#64CB40"))
                     if(questionNumber+1 == questions.count()){
                         val intent = Intent(this, ResultsActivity::class.java)
                         intent.putExtra("Category", category)
+                        intent.putExtra("currentScore", currentScore)
+                        intent.putExtra("username", username)
                         startActivity(intent)
                         finish()
                     } else{
@@ -263,21 +318,108 @@ class QuestionsActivity : AppCompatActivity() {
                         intent.putExtra("number", questionNumber+1)
                         intent.putExtra("Category", category)
                         intent.putExtra("username", username)
+                        intent.putExtra("currentScore", currentScore)
                         startActivity(intent)
                         finish()
                     }
                 }
-
+                binding.answerTwo.setOnClickListener{
+                    binding.answerTwo.setBackgroundColor(Color.parseColor("#EE3A57"))
+                    currentScore += 0
+                    if(questionNumber+1 == questions.count()){
+                        val intent = Intent(this, ResultsActivity::class.java)
+                        intent.putExtra("Category", category)
+                        intent.putExtra("username", username)
+                        intent.putExtra("currentScore", currentScore)
+                        startActivity(intent)
+                        finish()
+                    } else{
+                        val intent = Intent(this, QuestionsActivity::class.java)
+                        intent.putExtra("number", questionNumber+1)
+                        intent.putExtra("Category", category)
+                        intent.putExtra("username", username)
+                        intent.putExtra("currentScore", currentScore)
+                        startActivity(intent)
+                        finish()
+                    }
+                }
+                binding.answerThree.setOnClickListener{
+                    binding.answerThree.setBackgroundColor(Color.parseColor("#EE3A57"))
+                    currentScore += 0
+                    if(questionNumber+1 == questions.count()){
+                        val intent = Intent(this, ResultsActivity::class.java)
+                        intent.putExtra("Category", category)
+                        intent.putExtra("username", username)
+                        intent.putExtra("currentScore", currentScore)
+                        startActivity(intent)
+                        finish()
+                    } else{
+                        val intent = Intent(this, QuestionsActivity::class.java)
+                        intent.putExtra("number", questionNumber+1)
+                        intent.putExtra("Category", category)
+                        intent.putExtra("username", username)
+                        intent.putExtra("currentScore", currentScore)
+                        startActivity(intent)
+                        finish()
+                    }
+                }
+                binding.answerOne.setOnClickListener{
+                    binding.answerOne.setBackgroundColor(Color.parseColor("#EE3A57"))
+                    currentScore += 0
+                    if(questionNumber+1 == questions.count()){
+                        val intent = Intent(this, ResultsActivity::class.java)
+                        intent.putExtra("Category", category)
+                        intent.putExtra("username", username)
+                        intent.putExtra("currentScore", currentScore)
+                        startActivity(intent)
+                        finish()
+                    } else{
+                        val intent = Intent(this, QuestionsActivity::class.java)
+                        intent.putExtra("number", questionNumber+1)
+                        intent.putExtra("Category", category)
+                        intent.putExtra("username", username)
+                        intent.putExtra("currentScore", currentScore)
+                        startActivity(intent)
+                        finish()
+                    }
+                }
+                Log.i("Score", "${currentScore}/${questions.count()}")
             }
-            else -> {
+            "Logos" -> {
                 val questions = LogoQuestions()
                 var questionNumber = intent.getIntExtra("number", 0)
                 val currQuestion = questions[questionNumber]
+                var currentScore = intent.getIntExtra("currentScore", 0)
                 updateUI(username, currQuestion)
+
+                binding.answerTwo.setOnClickListener{
+                    currentScore += 1
+                    binding.answerTwo.setBackgroundColor(Color.parseColor("#64CB40"))
+                    if(questionNumber+1 == questions.count()){
+                        val intent = Intent(this, ResultsActivity::class.java)
+                        intent.putExtra("Category", category)
+                        intent.putExtra("currentScore", currentScore)
+                        intent.putExtra("username", username)
+                        startActivity(intent)
+                        finish()
+                    } else{
+                        val intent = Intent(this, QuestionsActivity::class.java)
+                        intent.putExtra("number", questionNumber+1)
+                        intent.putExtra("Category", category)
+                        intent.putExtra("username", username)
+                        intent.putExtra("currentScore", currentScore)
+                        startActivity(intent)
+                        finish()
+                    }
+                }
                 binding.answerOne.setOnClickListener{
+                    binding.answerOne.setBackgroundColor(Color.parseColor("#EE3A57"))
+                    currentScore += 0
                     if(questionNumber+1 == questions.count()){
                         val intent = Intent(this, ResultsActivity::class.java)
                         intent.putExtra("Category", category)
+                        intent.putExtra("username", username)
+                        intent.putExtra("currentScore", currentScore)
                         startActivity(intent)
                         finish()
                     } else{
@@ -285,15 +427,19 @@ class QuestionsActivity : AppCompatActivity() {
                         intent.putExtra("number", questionNumber+1)
                         intent.putExtra("Category", category)
                         intent.putExtra("username", username)
+                        intent.putExtra("currentScore", currentScore)
                         startActivity(intent)
                         finish()
                     }
                 }
-
                 binding.answerThree.setOnClickListener{
+                    binding.answerThree.setBackgroundColor(Color.parseColor("#EE3A57"))
+                    currentScore += 0
                     if(questionNumber+1 == questions.count()){
                         val intent = Intent(this, ResultsActivity::class.java)
                         intent.putExtra("Category", category)
+                        intent.putExtra("username", username)
+                        intent.putExtra("currentScore", currentScore)
                         startActivity(intent)
                         finish()
                     } else{
@@ -301,15 +447,19 @@ class QuestionsActivity : AppCompatActivity() {
                         intent.putExtra("number", questionNumber+1)
                         intent.putExtra("Category", category)
                         intent.putExtra("username", username)
+                        intent.putExtra("currentScore", currentScore)
                         startActivity(intent)
                         finish()
                     }
                 }
-
                 binding.answerFour.setOnClickListener{
+                    binding.answerFour.setBackgroundColor(Color.parseColor("#EE3A57"))
+                    currentScore += 0
                     if(questionNumber+1 == questions.count()){
                         val intent = Intent(this, ResultsActivity::class.java)
                         intent.putExtra("Category", category)
+                        intent.putExtra("username", username)
+                        intent.putExtra("currentScore", currentScore)
                         startActivity(intent)
                         finish()
                     } else{
@@ -317,10 +467,12 @@ class QuestionsActivity : AppCompatActivity() {
                         intent.putExtra("number", questionNumber+1)
                         intent.putExtra("Category", category)
                         intent.putExtra("username", username)
+                        intent.putExtra("currentScore", currentScore)
                         startActivity(intent)
                         finish()
                     }
                 }
+                Log.i("Score", "${currentScore}/${questions.count()}")
             }
         }
         binding.settingsButton.setOnClickListener{
@@ -353,6 +505,7 @@ class QuestionsActivity : AppCompatActivity() {
         } else{
             binding.nameText.text = "${currentQuestion.QuestionTxt}"
         }
+        binding.imageContainer.setImageResource(currentQuestion.QuestionImg)
         binding.answerOne.text = currentQuestion.OptionOne
         binding.answerTwo.text = currentQuestion.OptionTwo
         binding.answerThree.text = currentQuestion.OptionThree
