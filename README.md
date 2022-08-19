@@ -145,13 +145,14 @@ Get staff updates and talk to other members to keep up to date with what is happ
 ## Concept Process
 
 The `Conceptual Process` is the set of actions, activities and research that was done when starting this project. <br>
-For this specific project, I had taken inspiration from other medical websites and the current CDE webiste to implement a more efficient dashboard design, keeping in mind that this would primarily be used for appointment booking. This project incorporates simplicity and encourages interaction on it. The main idea behin the project was to ease the process of managing an entire syste, thus making work easier for CDE members. 
+The conceptual approach to creating this application was largely inspired by looking at other applications that were similiar, the success of the application would depend on identifying limitations that I had while pushing myself to create an application that is functional. During my process I had looked at different applications on the google playstore and other sources. The conceptual process has always proven to be difficult and an important step, especially considering that this would be my first application built using Kotlin. 
 <br> 
-Throughout the concept process I had also started learning more about REACT to make the project easier for myself as well as making it more efficient. This would make for a more successful project overall. Furthemore, I had to conceptually understand the limitations that I had considering my basic knowledge of PHP. 
 
 ### Ideation
 
-![image7](https://drive.google.com/uc?export=view&id=1K4q_eWZJq-odCJlG3jd-ENfxlXb7omN_)
+![image7](https://drive.google.com/uc?export=view&id=1WJyKYKGAXGVCdoBPDnqf5TtQSQmz_GGT)
+### User Flow
+As part of my planning for this application, a user flow Diagram was created in order to identify the possible routes that the user could take throughout the application, considering that the application does not have many routes to explore, the Diagram was kept fairly simple. The user flow diagram played a large role in the planning phase and how my visuals would look
 ### Wireframes
   Wireframing fell as part of my planning process, these wireframes would guide me in the right direction and would assist me in planning my content in order to ge the best possible outcan that I could possibly get for this project.
 ![image6](https://drive.google.com/uc?export=view&id=1UVAQ3u8f3C3ZfcbXLlzEQng64HR6n1cy)
