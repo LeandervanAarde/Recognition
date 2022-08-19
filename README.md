@@ -17,7 +17,7 @@
 <p align="center">
 
   <a href="https://github.com/LeandervanAarde/nhl">
-    <img src="https://drive.google.com/uc?export=view&id=19JkfDgvGLzHQ1AVMvgv9rLTFR0HzJBVq" alt="Logo" width="140">
+    <img src="https://drive.google.com/uc?export=view&id=1zHgXaETcBDaKuOiRy--rqpkdl5Ppi4vV" alt="Logo" width="140">
   </a>
 
 <!-- https://drive.google.com/file/d/19JkfDgvGLzHQ1AVMvgv9rLTFR0HzJBVq/view?usp=sharing -->
@@ -114,12 +114,6 @@ Run the following in the command-line to install all the required dependencies:
 
 4. No API keys are required
 
-5. Make sure MAMP is installed </br>
-    You can download MAMP here: [MAMP](https://www.mamp.info/en/windows/)
-
-6. Place scripts database inside of the ".htdocs" folder and </br>
-
-7. Import SQL database into PHP my admin to get the data. </br>
 
 <!-- FEATURES AND FUNCTIONALITY-->
 <!-- You can add the links to all of your imagery at the bottom of the file as references -->
@@ -226,6 +220,7 @@ What aspects of this final build contribute to the `Above And Beyond` Component 
 ### Video Demonstration
 To see a run through of the application, click below:
 [View Demonstration](https://drive.google.com/uc?export=view&id=15g0MauoJMrDld3alcVn1GhrlNraR1i_w)
+
 
 See the [open issues](https://github.com/LeandervanAarde/cde-booking/issues) for a list of proposed features (and known issues).
 
