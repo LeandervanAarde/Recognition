@@ -156,7 +156,7 @@ As part of my planning for this application, a user flow Diagram was created in 
 ### Wireframes
   Wireframing fell as part of my planning process, these wireframes would guide me in the right direction and would assist me in planning my content in order to ge the best possible outcan that I could possibly get for this project.
   
-  <div style="padding:0;margin:0; display: flex; justify-content:space-between;">
+  <div style="padding:0;margin:0; display: flex; justify-content:center;">
   <img src="https://drive.google.com/uc?export=view&id=15k13_MjYLGMaCIvbtqgn0TgH2gHKviS3"  />
 <img src="https://drive.google.com/uc?export=view&id=1tjIy1xDp-wW7GBFV68sazwdX-99jgOkb"  style="padding:0;margin:0; display: flex; justify-content: center;"/>
 <img src="https://drive.google.com/uc?export=view&id=10Uh4B3BJgkW1YK6fX5vMC3HN7yOjA0eV"  style="padding:0;margin:0; display: flex; justify-content: center;"/>
