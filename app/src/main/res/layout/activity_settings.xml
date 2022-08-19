@@ -79,6 +79,7 @@
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <com.google.android.material.button.MaterialButton
+                android:id="@+id/resetScores"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:minHeight="60dp"

@@ -26,7 +26,6 @@ class HomeScreen : AppCompatActivity() {
         binding = ActivityHomeScreenBinding.inflate(layoutInflater)
         setContentView(binding.root)
         val categories = getAllCategories()
-
         //these are the categories
         val categoryOne = categories[0]
         val categoryTwo = categories[1]

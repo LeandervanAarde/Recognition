@@ -36,6 +36,8 @@ class ResultsActivity : AppCompatActivity() {
         when (category) {
             "Memes" -> {
                 val length = getMemeQuestions().count()
+                val questions = getMemeQuestions()
+
                 Log.i("${category} score...", "$finalScore/$length" )
                 binding.textView3.text = "$userName Score: $finalScore/$length"
                 val lastScore = Preference.getInt(CategoryConstants.MEME_LAST_SCORE,0)

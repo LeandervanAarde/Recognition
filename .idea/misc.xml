@@ -8,9 +8,9 @@
         <entry key="app/src/main/res/layout/activity_enter_name.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_home_screen.xml" value="0.22" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/activity_questions.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/activity_questions.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_results.xml" value="0.25" />
-        <entry key="app/src/main/res/layout/activity_settings.xml" value="0.2760416666666667" />
+        <entry key="app/src/main/res/layout/activity_settings.xml" value="0.20216606498194944" />
         <entry key="app/src/main/res/layout/activity_splash_screen.xml" value="0.4036458333333333" />
         <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.214" />
       </map>
