@@ -12,30 +12,30 @@
 <!-- HEADER SECTION -->
 <h3 align="center" style="padding:0;margin:0;">Leander van Aarde</h3>
 <h5 align="center" style="padding:0;margin:0;">200211</h5>
-<h6 align="center">DV200 - Term 2 CDE BOOKING  | 2022</h6>
+<h6 align="center">Android 203 | 2022</h6>
 </br>
 <p align="center">
 
   <a href="https://github.com/LeandervanAarde/nhl">
-    <img src="https://drive.google.com/uc?export=view&id=19JkfDgvGLzHQ1AVMvgv9rLTFR0HzJBVq" alt="Logo" width="140">
+    <img src="https://drive.google.com/uc?export=view&id=1zHgXaETcBDaKuOiRy--rqpkdl5Ppi4vV" alt="Logo" width="140">
   </a>
 
 <!-- https://drive.google.com/file/d/19JkfDgvGLzHQ1AVMvgv9rLTFR0HzJBVq/view?usp=sharing -->
   
-  <h3 align="center">CDE Management system</h3>
+  <h3 align="center">Recognition mobile trivia Application</h3>
 
   <p align="center">
-    This is a project that has been "built" for the CDE as a way for Receptionists to manage appointment, Doctor and patients that are involved with the CDE. 
+  A Trivia Application for Android cellphones, build with Kotlin and in Android Studio!
     <br />
-    <p align="center"> Find the official website for the Center of Diabetes and Endocrinology : <a href="https://www.cdediabetes.co.za/"> here</a> </p>
+
    <br />
    <br />
    <a href="path/to/demonstration/video">View Demo</a> 
    <!-- INSERT UP UP -->
     ·
-    <a href="https://github.com/LeandervanAarde/cde-booking/issues">Report Bug</a>
+    <a href="https://github.com/LeandervanAarde/Recognition/issues">Report Bug</a>
     ·
-    <a href="https://github.com/LeandervanAarde/cde-booking/issues">Request Feature</a>
+    <a href="https://github.com/LeandervanAarde/Recognition/issues">Request Feature</a>
 </p>
 <!-- TABLE OF CONTENTS -->
 
@@ -73,18 +73,13 @@
 
 ### Project Description
 
-Welcome to the CDE program, 
-This web based application is a management system that allows Receptionists to manage the adminstration of the CDE Doctors office, managing patients, Doctors, Receptionist and appointments. The aim of this applicatiion was to learn the fundamentals of CRUD functioinallity in PHP and apply it to REACT. It is also aimed at giving Receptionists a user-friendly experience and an easy way to manage a booking portal. 
+<p>Welcome to Recognition! a trivia application that has been built for Android devices, more specifically Cellphones. This application is set out to challenge your knowledge on entertainment related subjects such as memes, celebreties and movies! Recognition tests your ability to remember things based on a visual, thus the name "Recognition" </p>
 
 ### Built With
-* [SASS](https://sass-lang.com/)
-* [React](https://reactjs.org/)
-* [Socket.io](https://socket.io/)
-* [Express](https://expressjs.com/)
-* [Axios](https://axios-http.com/docs/intro)
-* [React Icons](https://react-icons.github.io/react-icons/)
-* [Bootstrap](https://getbootstrap.com/)
-* [MomentJS](https://momentjs.com/)
+* [Android Studio](https://sass-lang.com/)
+* [XML](https://reactjs.org/)
+* [Kotlin](https://socket.io/)
+
 
 <!-- GETTING STARTED -->
 <!-- Make sure to add appropriate information about what prerequesite technologies the user would need and also the steps to install your project on their own mashines -->
@@ -119,12 +114,6 @@ Run the following in the command-line to install all the required dependencies:
 
 4. No API keys are required
 
-5. Make sure MAMP is installed </br>
-    You can download MAMP here: [MAMP](https://www.mamp.info/en/windows/)
-
-6. Place scripts database inside of the ".htdocs" folder and </br>
-
-7. Import SQL database into PHP my admin to get the data. </br>
 
 <!-- FEATURES AND FUNCTIONALITY-->
 <!-- You can add the links to all of your imagery at the bottom of the file as references -->
@@ -156,13 +145,14 @@ Get staff updates and talk to other members to keep up to date with what is happ
 ## Concept Process
 
 The `Conceptual Process` is the set of actions, activities and research that was done when starting this project. <br>
-For this specific project, I had taken inspiration from other medical websites and the current CDE webiste to implement a more efficient dashboard design, keeping in mind that this would primarily be used for appointment booking. This project incorporates simplicity and encourages interaction on it. The main idea behin the project was to ease the process of managing an entire syste, thus making work easier for CDE members. 
+The conceptual approach to creating this application was largely inspired by looking at other applications that were similiar, the success of the application would depend on identifying limitations that I had while pushing myself to create an application that is functional. During my process I had looked at different applications on the google playstore and other sources. The conceptual process has always proven to be difficult and an important step, especially considering that this would be my first application built using Kotlin. 
 <br> 
-Throughout the concept process I had also started learning more about REACT to make the project easier for myself as well as making it more efficient. This would make for a more successful project overall. Furthemore, I had to conceptually understand the limitations that I had considering my basic knowledge of PHP. 
 
 ### Ideation
 
-![image7](https://drive.google.com/uc?export=view&id=1K4q_eWZJq-odCJlG3jd-ENfxlXb7omN_)
+![image7](https://drive.google.com/uc?export=view&id=1WJyKYKGAXGVCdoBPDnqf5TtQSQmz_GGT)
+### User Flow
+As part of my planning for this application, a user flow Diagram was created in order to identify the possible routes that the user could take throughout the application, considering that the application does not have many routes to explore, the Diagram was kept fairly simple. The user flow diagram played a large role in the planning phase and how my visuals would look
 ### Wireframes
   Wireframing fell as part of my planning process, these wireframes would guide me in the right direction and would assist me in planning my content in order to ge the best possible outcan that I could possibly get for this project.
 ![image6](https://drive.google.com/uc?export=view&id=1UVAQ3u8f3C3ZfcbXLlzEQng64HR6n1cy)
@@ -231,6 +221,7 @@ What aspects of this final build contribute to the `Above And Beyond` Component 
 ### Video Demonstration
 To see a run through of the application, click below:
 [View Demonstration](https://drive.google.com/uc?export=view&id=15g0MauoJMrDld3alcVn1GhrlNraR1i_w)
+
 
 See the [open issues](https://github.com/LeandervanAarde/cde-booking/issues) for a list of proposed features (and known issues).
 
