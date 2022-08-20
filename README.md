@@ -119,18 +119,16 @@ https://developer.android.com/studio?gclid=Cj0KCQjwjIKYBhC6ARIsAGEds-JHh4MRMZM1l
 
 ![image2](https://drive.google.com/uc?export=view&id=1JrKOl34AXmAOUkeYZ_hkI7sUGl52Et1u)
 
-### See all available appointments by clicking on the Calendars dates! 
-See,Book, update and remove all available appointments for anytime on any day! The calendar on the CDE allows Receptionists to see availabilities for the near and far future. 
+### See all categories that are available along with amount of questions in that category! 
+See all the categories that are available in Recognition along with the highscores that have been set in each category, see how many questions are in each category! 
 
-### See booked appointments for current week
-See all booked appointments for the current week (start to end) so that Receptionists can confirm appointments with patients and cancel if needed. 
+### Answer questions through visual recognition
+Answer all questions through a visual hint above the question! Recognize your way to a highscore in each category.
 
-### Add, edit and remove people from the application
-Remove old patients, Doctors and Receptionists that have left the CDE or CDE program. This allows the system to remain light weight and easy to scroll through. 
-Edit all members as information is changed such as email etc. 
-Visually see all members and add members to the system!
+### Set and reset highscores
+Get and beat the highscore in each of the categories that are locally stored, also have the opportunity to reset the highscore on all categories whenever you want to! After quiz is finished, view all the right answers.
 
-![image4](https://drive.google.com/uc?export=view&id=179PtitQiOw--XTjHwvjWnHSUn7ZrX4dD)
+![image4](https://drive.google.com/uc?export=view&id=1tm55oe94wZxuD8tVqSA2FB50OdqiBrzk)
 
 ### Talk to other Staff members on the live chat
 Get staff updates and talk to other members to keep up to date with what is happening in the CDE to ensure nothing goes missing, this allows staff members to avoid missing important information and updates based around the CDE.
