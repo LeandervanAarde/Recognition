@@ -76,20 +76,16 @@
 <p>Welcome to Recognition! a trivia application that has been built for Android devices, more specifically Cellphones. This application is set out to challenge your knowledge on entertainment related subjects such as memes, celebreties and movies! Recognition tests your ability to remember things based on a visual, thus the name "Recognition" </p>
 
 ### Built With
-* [Android Studio](https://sass-lang.com/)
-* [XML](https://reactjs.org/)
-* [Kotlin](https://socket.io/)
+* [Android Studio](https://developer.android.com/studio?gclid=Cj0KCQjwjIKYBhC6ARIsAGEds-KcfNuiOxkpdKAShthPdR_AaVf7LyCKH9HruSDsDGiJN3LxWyHn6L4aAm0ZEALw_wcB&gclsrc=aw.ds)
+* XML
+* Kotlin
 
-
-<!-- GETTING STARTED -->
-<!-- Make sure to add appropriate information about what prerequesite technologies the user would need and also the steps to install your project on their own mashines -->
 ## Getting Started
 
 To get a copied file of this repository, follow the steps below to get it installed on your local machine. 
 
 ### Prerequisites
-
-Ensure that you have the latest version of [NPM](https://www.npmjs.com/) installed on your machine. The [GitHub Desktop](https://desktop.github.com/) program will also be required.
+The [GitHub Desktop](https://desktop.github.com/) program will be required.
 
 ### How to install
 
@@ -157,10 +153,6 @@ As part of my planning for this application, a user flow Diagram was created in 
 ![image15](https://drive.google.com/uc?export=view&id=1-LKxWPSuAWVnxmvvw5iyRxi7WZoyj8zJ)
 ![image15](https://drive.google.com/uc?export=view&id=10ijj7UjDyzHe-HwOpxnV7Kp5CeMInFG0) 
 
-
-
-
-
 <!-- DEVELOPMENT PROCESS -->
 ## Development Process
 
@@ -170,24 +162,22 @@ The `Development Process` is the technical implementations and functionality don
 <!-- stipulate all of the functionality you included in the project -->
 <!-- This is your time to shine, explain the technical nuances of your project, how did you achieve the final outcome!-->
 
-* Utilized momentJS in order to create the calendar, get weekly and daily appointments. This would make that I could make bookings far ahead of time and view appointments in the near future. 
-* Implementation of Socket io to make a chat room. This makes use of web sockets in order to send and receive messages on the Chat component. This required an additional serverside folder in order to make this possible
-* Express was implemented as part of the backend for the chat component
-* SASS was implemented in order to make styling more efficient and easier to understand, this could also assist with consistency of colours throughout the project.
-* Components were made more re-usable so that I could access them in different places, this also allows for less code to do more and future developers can read it and understand it more (we hope!). 
-* Implementation of PHP and SQL as backend to store, create, read, update and delete data. 
+* During the development of this application I had utilised Kotlin to implement functionallity for the project. XML was used for the layout of the project
+* Category names are implemented dynamically through the use of a Object class file that holds all the names of the category, question ammounts are also added in dynamically by calculating the length of the current questions dataset.
+* Results are showcased and created dynamically based on the amount of questions in a particular category.
+* Questions , answers and iamges are populated dynamically and final score is showcased based on correct answers and length of category.
+* Highscore is saved if the users final score is higher than the highscore. Users are also able to reset all high scores. 
+* Visual feedback from application on every answer, if the answer is wrong visual feedback will showcase red and correct answer will showcase green
 
 #### Highlights
 <!-- stipulated the highlight you experienced with the project -->
-* Over the course of this project, the highlight for me was the impementation of Socket Io, this was especially exciting because it added an extra layer of excitement to the application. 
-* Using PHP has taught me the basics of backend development and SQL databases. This was a highlight as it has the potential to open up many more doors.
-* I enjoyed the challenges that these two languages have brought, although it was extremely difficult, I have a new respect for Php and what it has to offer.
+* Over the course of this project, a definite highlight was the implementation of Kotlin and XML, learning this was challenging and yet rewarding
+* Using Kotlin has taught me the basics of Android development, and although I have not implemented a huge amount of functionallity, I look forward to learning more about this language
 
 #### Challenges
 <!-- stipulated the challenges you faced with the project and why you think you faced it or how you think you'll solve it (if not solved) -->
-* One of my largest challenges in this project was an error that is still active, there is an issue with the useEffects that cause an infinite loop, thus information does not properly update unless the application is reloaded everytime a change is made. This is especially frustrating because it defeats the purpose of SPA=. 
-* The intergration of PHP and REACT was fairly difficult and was proven to be a challenge throuhgout the entire project. This issue was resolved through numerous work arounds and self study. In the end the project was successful, but it was fairly challenging
-* Consistency was a big issue in this problem , I've noticed that this is a challenge among most of the applications that I have developed. This is something that I will pay more attention to in the future, but this was a step in the right direction. 
+* The largest challenge I have faced throughout this entire project was the implementation of the timer found on each questions, while the actual countdown was not too challenging, it is moving on to the next activity that has shown to be extremly challenging. (was this issue resolved?)
+* Learning Kotlin was a challenge, this language has been a huge challenge considering that I am used to Javascript which follows a completely different approach when it comes to programming.
 
 #### Above And Beyond
 
@@ -211,9 +201,9 @@ What aspects of this final build contribute to the `Above And Beyond` Component 
 
 ### Mockups
 
-![image10](https://drive.google.com/uc?export=view&id=1zhp2EjfmmWPeYJ1ug8vRv8NEBVu50XaH)
-![image11](https://drive.google.com/uc?export=view&id=1lWJwFo9amrM6M1hlhdouKXxl6RWEkE8a)
-![image12](https://drive.google.com/uc?export=view&id=179PtitQiOw--XTjHwvjWnHSUn7ZrX4dD)
+![image10](https://drive.google.com/uc?export=view&id=1JrKOl34AXmAOUkeYZ_hkI7sUGl52Et1u)
+![image11](https://drive.google.com/uc?export=view&id=1tm55oe94wZxuD8tVqSA2FB50OdqiBrzk)
+![image12](https://drive.google.com/uc?export=view&id=17nVXBFXDrgwZwdAX_uq6rglDA5UJpNCn)
 ![image13](https://drive.google.com/uc?export=view&id=1AZRxRysJt9lKHe_fatdQWGNezd3PFrUv)
 ![image14](https://drive.google.com/uc?export=view&id=1Jed5lxkq6HY8Pc-Y7tFW8hU9LxbHVj0a)
 1AZRxRysJt9lKHe_fatdQWGNezd3PFrUv
@@ -238,8 +228,8 @@ Distributed under the MIT License. See `LICENSE` for more information.\
 <!-- LICENSE -->
 ## Contact
 
-* **leander van Aarde** -(mailto: Leander.vaonline@gmail.com) - [@instagram_handle](https://www.instagram.com/_.leander_e/) 
-* **Project Link** - https://github.com/LeandervanAarde/cde-booking
+* **Leander van Aarde** -(mailto: Leander.vaonline@gmail.com) - [@instagram_handle](https://www.instagram.com/_.leander_e/) 
+* **Project Link** - https://github.com/LeandervanAarde/Recognition
 
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
