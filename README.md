@@ -1,11 +1,11 @@
 <!-- Repository Information & Links-->
 <br />
 
-![GitHub repo size](https://img.shields.io/github/repo-size/LeandervanAarde/nhl)
-![GitHub watchers](https://img.shields.io/github/watchers/LeandervanAarde/nhl)
-![GitHub language count](https://img.shields.io/github/languages/count/LeandervanAarde/nhl)
-![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/LeandervanAarde/nhl)
-![GitHub dependancies](https://img.shields.io/depfu/dependencies/github/LeandervanAarde/nhl)
+![GitHub repo size](https://img.shields.io/github/repo-size/LeandervanAarde/Recognition)
+![GitHub watchers](https://img.shields.io/github/watchers/LeandervanAarde/Recognition)
+![GitHub language count](https://img.shields.io/github/languages/count/LeandervanAarde/Recognition)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/LeandervanAarde/Recognition)
+![GitHub dependancies](https://img.shields.io/depfu/dependencies/github/LeandervanAarde/Recognition)
 
 <!-- LeandervanAarde/nhl -->
 
@@ -16,7 +16,7 @@
 </br>
 <p align="center">
 
-  <a href="https://github.com/LeandervanAarde/nhl">
+  <a href="https://github.com/LeandervanAarde/Recognition">
     <img src="https://drive.google.com/uc?export=view&id=1zHgXaETcBDaKuOiRy--rqpkdl5Ppi4vV" alt="Logo" width="140">
   </a>
 
@@ -68,7 +68,7 @@
 <!--PROJECT DESCRIPTION-->
 ## About the Project
 <!-- header image of project -->
-![image1](https://drive.google.com/uc?export=view&id=1zhp2EjfmmWPeYJ1ug8vRv8NEBVu50XaH)
+![image1](https://drive.google.com/uc?export=view&id=17nVXBFXDrgwZwdAX_uq6rglDA5UJpNCn)
 
 
 ### Project Description
@@ -102,26 +102,22 @@ Enter `https://github.com/LeandervanAarde/cde-booking.git` into the URL field an
 2. Clone Repository </br>
 Run the following in the command-line to clone the project:
    ```sh
-   git clone https://github.com/LeandervanAarde/cde-booking.git
+   git clone https://github.com/LeandervanAarde/Recognition.git
    ```
     Open `Software` and select `File | Open...` from the menu. Select cloned directory and press `Open` button
 
-3. Install Dependencies </br>
-Run the following in the command-line to install all the required dependencies:
-   ```sh
-   npm install
-   ```
-
-4. No API keys are required
-
+3. Ensure you have Android studio installed on your local machine 
+```sh
+https://developer.android.com/studio?gclid=Cj0KCQjwjIKYBhC6ARIsAGEds-JHh4MRMZM1lk3tNuS5BAaezi-IoCqMSo302EGhP340HWa9_ZNjtm8aAvmnEALw_wcB&gclsrc=aw.ds
+```
 
 <!-- FEATURES AND FUNCTIONALITY-->
-<!-- You can add the links to all of your imagery at the bottom of the file as references -->
+
 ## Features and Functionality
 
 <!-- note how you can use your gitHub link. Just make a path to your assets folder -->
 
-![image2](https://drive.google.com/uc?export=view&id=1lWJwFo9amrM6M1hlhdouKXxl6RWEkE8a)
+![image2](https://drive.google.com/uc?export=view&id=1JrKOl34AXmAOUkeYZ_hkI7sUGl52Et1u)
 
 ### See all available appointments by clicking on the Calendars dates! 
 See,Book, update and remove all available appointments for anytime on any day! The calendar on the CDE allows Receptionists to see availabilities for the near and far future. 
