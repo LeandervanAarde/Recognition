@@ -32,36 +32,29 @@ class ResultsActivity : AppCompatActivity() {
         val finalScore = intent.getIntExtra("currentScore", 0)
         val userName = intent.getStringExtra("username").toString()
 
-        Log.i("The final score is...", finalScore.toString())
-
         when (category) {
             "Memes" -> {
                 val length = getMemeQuestions().count()
                 val questions = getMemeQuestions()
-//                createResults(length, questions[0])
                 Log.i("${category} score...", "$finalScore/$length" )
                 binding.textView3.text = "$userName Score: $finalScore/$length"
                 val lastScore = Preference.getInt(CategoryConstants.MEME_LAST_SCORE,0)
                 val highScore = Preference.getInt(CategoryConstants.MEME_HIGH_SCORE, 0)
-                if(highScore == 0){
+                if(highScore == 0 || finalScore > highScore){
                     editor.apply{
                         putInt(CategoryConstants.MEME_HIGH_SCORE, finalScore)
+                        binding.textView4.text = "New High Score!"
                         apply()
                     }
-                } else if( finalScore > highScore){
-                    editor.apply{
-                        putInt(CategoryConstants.MEME_HIGH_SCORE, finalScore)
-                        apply()
-                    }
+                }else{
+                    binding.textView4.text = "High Score: $highScore / $length"
                 }
                 for(i in 0 until length){
-
                     val question = TextView(this)
                     question.textSize = 19f
                     question.setTextColor(Color.parseColor("#FFFFFF"))
                     question.textAlignment = TextView.TEXT_ALIGNMENT_CENTER
                     question.text = "Q: ${questions[i].QuestionTxt}"
-//                    layout.addView(question)
                     binding.linearLayoutBrah.addView(question)
                     Log.i("Q", "${questions[i].QuestionTxt}")
 
@@ -94,7 +87,6 @@ class ResultsActivity : AppCompatActivity() {
 
                     binding.linearLayoutBrah.addView(answerFour)
                 }
-                binding.textView4.text = "High Score: $highScore / $length"
             }
             "Music" -> {
                 val length = getMusicQuestions().count()
@@ -103,16 +95,14 @@ class ResultsActivity : AppCompatActivity() {
                 binding.textView3.text = "$userName Score: $finalScore/$length"
                 val lastScore = Preference.getInt(CategoryConstants.MUSIC_LAST_SCORE,0)
                 val musicHighScore = Preference.getInt(CategoryConstants.MUSIC_HIGH_SCORE, 0)
-                if(finalScore == 0){
+                if(musicHighScore == 0 || finalScore > musicHighScore){
                     editor.apply{
                         putInt(CategoryConstants.MUSIC_HIGH_SCORE, finalScore)
+                        binding.textView4.text = "New High Score!"
                         apply()
                     }
-                } else if( finalScore > musicHighScore){
-                    editor.apply{
-                        putInt(CategoryConstants.MUSIC_HIGH_SCORE, finalScore)
-                        apply()
-                    }
+                }  else{
+                    binding.textView4.text = "High Score: $musicHighScore / $length"
                 }
 
                 for(i in 0 until length){
@@ -122,7 +112,6 @@ class ResultsActivity : AppCompatActivity() {
                     question.setTextColor(Color.parseColor("#FFFFFF"))
                     question.textAlignment = TextView.TEXT_ALIGNMENT_CENTER
                     question.text = "Q: ${questions[i].QuestionTxt}"
-//                    layout.addView(question)
                     binding.linearLayoutBrah.addView(question)
                     Log.i("Q", "${questions[i].QuestionTxt}")
 
@@ -154,10 +143,7 @@ class ResultsActivity : AppCompatActivity() {
                     answerFour.text = "Q: ${questions[i].OptionFour}"
 
                     binding.linearLayoutBrah.addView(answerFour)
-
-
                 }
-                binding.textView4.text = "High Score: $musicHighScore / $length"
             }
             "Movies and Tv" -> {
                 val length = getTvQuestions().count()
@@ -166,25 +152,21 @@ class ResultsActivity : AppCompatActivity() {
                 binding.textView3.text = "$userName Score: $finalScore/$length"
                 val lastScore = Preference.getInt(CategoryConstants.TV_LAST_SCORE,0)
                 val highScore = Preference.getInt(CategoryConstants.TV_HIGH_SCORE, 0)
-                if(highScore == 0){
+                if(highScore == 0 ||  finalScore > highScore){
                     editor.apply{
                         putInt(CategoryConstants.TV_HIGH_SCORE, finalScore)
+                        binding.textView4.text = "New High Score!"
                         apply()
                     }
-                } else if( finalScore > highScore){
-                    editor.apply{
-                        putInt(CategoryConstants.TV_HIGH_SCORE, finalScore)
-                        apply()
-                    }
+                } else{
+                    binding.textView4.text = "High Score: $highScore / $length"
                 }
                 for(i in 0 until length){
-
                     val question = TextView(this)
                     question.textSize = 19f
                     question.setTextColor(Color.parseColor("#FFFFFF"))
                     question.textAlignment = TextView.TEXT_ALIGNMENT_CENTER
                     question.text = "Q: ${questions[i].QuestionTxt}"
-//                    layout.addView(question)
                     binding.linearLayoutBrah.addView(question)
                     Log.i("Q", "${questions[i].QuestionTxt}")
 
@@ -216,10 +198,7 @@ class ResultsActivity : AppCompatActivity() {
                     answerFour.text = "Q: ${questions[i].OptionFour}"
 
                     binding.linearLayoutBrah.addView(answerFour)
-
-
                 }
-                binding.textView4.text = "High Score: $highScore / $length"
             }
             "Celebrities" -> {
                 val questions = getAllCelebQuestions()
@@ -228,16 +207,14 @@ class ResultsActivity : AppCompatActivity() {
                 binding.textView3.text = "$userName Score: $finalScore/$length"
                 val lastScore = Preference.getInt(CategoryConstants.Celeb_LAST_SCORE,0)
                 val highScore = Preference.getInt(CategoryConstants.CELEB_HIGH_SCORE, 0)
-                if(highScore == 0){
+                if(highScore == 0 || finalScore > highScore){
                     editor.apply{
                         putInt(CategoryConstants.CELEB_HIGH_SCORE, finalScore)
+                        binding.textView4.text = "New High Score!"
                         apply()
                     }
-                } else if( finalScore > highScore){
-                    editor.apply{
-                        putInt(CategoryConstants.CELEB_HIGH_SCORE, finalScore)
-                        apply()
-                    }
+                } else{
+                    binding.textView4.text = "High Score: $highScore / $length"
                 }
                 for(i in 0 until length){
 
@@ -246,7 +223,6 @@ class ResultsActivity : AppCompatActivity() {
                     question.setTextColor(Color.parseColor("#FFFFFF"))
                     question.textAlignment = TextView.TEXT_ALIGNMENT_CENTER
                     question.text = "Q: ${questions[i].QuestionTxt}"
-//                    layout.addView(question)
                     binding.linearLayoutBrah.addView(question)
                     Log.i("Q", "${questions[i].QuestionTxt}")
 
@@ -278,10 +254,7 @@ class ResultsActivity : AppCompatActivity() {
                     answerFour.text = "Q: ${questions[i].OptionFour}"
 
                     binding.linearLayoutBrah.addView(answerFour)
-
-
                 }
-                binding.textView4.text = "High Score: $highScore / $length"
             }
             "Logos" -> {
                 val length = LogoQuestions().count()
@@ -290,18 +263,14 @@ class ResultsActivity : AppCompatActivity() {
                 binding.textView3.text = "$userName Score: $finalScore/$length"
                 val lastScore = Preference.getInt(CategoryConstants.LOGO_LAST_SCORE,0)
                 val highScore = Preference.getInt(CategoryConstants.LOGO_HIGH_SCORE, 0)
-                if(highScore == 0){
+                if(highScore == 0 || finalScore > highScore){
                     editor.apply{
                         putInt(CategoryConstants.LOGO_HIGH_SCORE, finalScore)
+                        binding.textView4.text = "New High Score!"
                         apply()
-                        binding.textView4.text = "High Score: $finalScore / $length"
                     }
-                } else if( finalScore > highScore){
-                    editor.apply{
-                        putInt(CategoryConstants.LOGO_HIGH_SCORE, finalScore)
-                        apply()
-                        binding.textView4.text = "High Score: $finalScore / $length"
-                    }
+                } else{
+                    binding.textView4.text = "High Score: $highScore / $length"
                 }
                 for(i in 0 until length){
 
@@ -310,7 +279,6 @@ class ResultsActivity : AppCompatActivity() {
                     question.setTextColor(Color.parseColor("#FFFFFF"))
                     question.textAlignment = TextView.TEXT_ALIGNMENT_CENTER
                     question.text = "Q: ${questions[i].QuestionTxt}"
-//                    layout.addView(question)
                     binding.linearLayoutBrah.addView(question)
                     Log.i("Q", "${questions[i].QuestionTxt}")
 
@@ -340,12 +308,8 @@ class ResultsActivity : AppCompatActivity() {
                     answerFour.setTextColor(Color.parseColor("#EE3A57"))
                     answerFour.textAlignment = TextView.TEXT_ALIGNMENT_TEXT_START
                     answerFour.text = "Q: ${questions[i].OptionFour}"
-
                     binding.linearLayoutBrah.addView(answerFour)
-
-
                 }
-                binding.textView4.text = "High Score: $highScore / $length"
             }
         }
 

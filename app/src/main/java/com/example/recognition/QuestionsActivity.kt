@@ -16,7 +16,6 @@ import com.example.recognition.models.Question
 
 class QuestionsActivity : AppCompatActivity() {
     private lateinit var binding: ActivityQuestionsBinding
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityQuestionsBinding.inflate(layoutInflater)
@@ -35,7 +34,6 @@ class QuestionsActivity : AppCompatActivity() {
                 val questions = getMemeQuestions()
                 val currQuestion = questions[questionNumber]
                 updateUI(username, currQuestion)
-
                 binding.answerOne.setOnClickListener{
                     currentScore += 1
                     binding.answerOne.setBackgroundColor(Color.parseColor("#64CB40"))
@@ -252,7 +250,6 @@ class QuestionsActivity : AppCompatActivity() {
             finish()
         }
     }
-
     fun updateUI(username: String, currentQuestion: Question, ){
         val category = intent.getStringExtra("Category").toString()
         if(currentQuestion.id == 1){

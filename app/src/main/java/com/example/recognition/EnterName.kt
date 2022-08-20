@@ -20,7 +20,6 @@ class EnterName : AppCompatActivity() {
         val category = intent.getStringExtra("Category").toString()
         Log.i("The category is", category)
 
-
         binding.btnStart.setOnClickListener{
             Log.i("Clicked", "Confirmed")
             val username = binding.euUsername.text

@@ -28,7 +28,6 @@
                 android:textSize="24sp"
                 android:textAlignment="center"
                 android:textColor="@color/white"/>
-
         </LinearLayout>
 
         <LinearLayout
@@ -87,10 +86,6 @@
                 android:backgroundTint="@color/red"
                 android:text="Reset All Scores"
                 app:cornerRadius="55dp"/>
-
         </LinearLayout>
     </LinearLayout>
-
-
-
 </LinearLayout>
