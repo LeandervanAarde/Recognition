@@ -183,18 +183,16 @@ The `Development Process` is the technical implementations and functionality don
 
 What aspects of this final build contribute to the `Above And Beyond` Component of your brief?
 <!-- what did you learn outside of the classroom and implement into your project-->
-* SocketIo Chatroom
-* This project made use of SocketIo in order to create a chatroom. Socket Io makes use of webSockets in order to create a communication between client and server. This was not part of the brief but it was something that I felt could be fairly benificial to the application. 
-+ MomentJS.
-* Moment JS was used as a way to incorporate formatted dates into the application, this was used throughout the entire application to apply functionality. It was also used in the creation of the calendar. 
-* SASS
-* Sass was used as a means to make Css more readable due to its structure. SCSS allows for external files to be linked. This was used to create more consistency in the front end of the application with the use of variables. The variables would allow me to predefine aspects such as fonts and colours to be re-used. Variables would also avoid aspects of too much repetition and making the code look un neat. 
+* For the extra functionallity in this project I have implemented a timer that visually shows the user how much time they have left on the current question. When the timer has run out, the question will then be dismissed and it will move on to the next question
+* Categories have been placed into the application dynamically.
+* Images are shown on each question. 
+
 
 ### Future Implementation
 <!-- stipulate functionality and improvements that can be implemented in the future. -->
-* In future I would like to implement better back end and make use of table relations and prepared statements. This will make the application more usable and more secure, while teaching me better practice for industry standard 
-* In the future I would like to implement a better, more consistent front end that is more attractive to the viewers. 
-*  A future improvement that I would like to incorporate is the image upload, due to time constraints I was not able to incorporate this into the project. 
+*In Future I would like to improve on the UI of the application and making it more interactable, this application is fairly simple and I would like to learn more about Kotlin to make a more advanced project
+* I would like to implement a backend to the application, I see a lot of potential in this application and think the implementation of something like Firebase would make this application a lot more exciting
+* Another future improvement is making the application available on any Android device instead of only on mobile devices
 
 <!-- MOCKUPS -->
 ## Final Outcome
@@ -204,26 +202,27 @@ What aspects of this final build contribute to the `Above And Beyond` Component 
 ![image10](https://drive.google.com/uc?export=view&id=1JrKOl34AXmAOUkeYZ_hkI7sUGl52Et1u)
 ![image11](https://drive.google.com/uc?export=view&id=1tm55oe94wZxuD8tVqSA2FB50OdqiBrzk)
 ![image12](https://drive.google.com/uc?export=view&id=17nVXBFXDrgwZwdAX_uq6rglDA5UJpNCn)
-![image13](https://drive.google.com/uc?export=view&id=1AZRxRysJt9lKHe_fatdQWGNezd3PFrUv)
-![image14](https://drive.google.com/uc?export=view&id=1Jed5lxkq6HY8Pc-Y7tFW8hU9LxbHVj0a)
-1AZRxRysJt9lKHe_fatdQWGNezd3PFrUv
+![image13](https://drive.google.com/uc?export=view&id=1jqnlewl74Rb54zydoHkp6OKh_tmM1PYu)
+
+![image14](https://drive.google.com/uc?export=view&id=1raTHOkDhoyytfuzzpw1nroXFVT0-yCtU)
+
 <!-- VIDEO DEMONSTRATION -->
 ### Video Demonstration
 To see a run through of the application, click below:
 [View Demonstration](https://drive.google.com/uc?export=view&id=15g0MauoJMrDld3alcVn1GhrlNraR1i_w)
 
 
-See the [open issues](https://github.com/LeandervanAarde/cde-booking/issues) for a list of proposed features (and known issues).
+See the [open issues](https://github.com/LeandervanAarde/Recognition/issues) for a list of proposed features (and known issues).
 
 <!-- AUTHORS -->
 ## Authors
 
-* [Leander van Aarde](https://github.com/LeandervanAarde/cde-booking)
+* [Leander van Aarde](https://github.com/LeandervanAarde/Recognition)
 
 <!-- LICENSE -->
 ## License
 
-Distributed under the MIT License. See `LICENSE` for more information.\
+Distributed under the MIT License. See `LICENSE` for more information.
 
 <!-- LICENSE -->
 ## Contact
@@ -234,8 +233,8 @@ Distributed under the MIT License. See `LICENSE` for more information.\
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
 <!-- all resources that you used and Acknowledgements here -->
-* [MomentJs](https://momentjs.com/)
-* [Stack overflow](https://stackoverflow.com/)
-* [SocketIO](https://socket.io/)
-* [Chat App](https://www.fullstacklabs.co/blog/chat-application-react-express-socket-io)
-* [Image](https://unsplash.com/)
+* [StackOverflow](https://stackoverflow.com/)
+* [Kotlin Documentation](https://developer.android.com/kotlin)
+* [Questions from Parade](https://parade.com/977752/samuelmurrian/movie-trivia/)
+
+* [images were found on Google](https://www.google.com/)
