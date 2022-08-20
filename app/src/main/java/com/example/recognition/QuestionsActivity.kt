@@ -21,11 +21,6 @@ class QuestionsActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityQuestionsBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        val memequestions = getMemeQuestions()
-        val musicQuestions = getMusicQuestions()
-        val tvQuestions = getTvQuestions()
-        val celebQuestions = getAllCelebQuestions()
-        val logoQuestions = LogoQuestions()
         val username = intent.getStringExtra("username").toString()
         val category = intent.getStringExtra("Category").toString()
         var questionNumber: Int = intent.getIntExtra("number", 0)
@@ -170,6 +165,7 @@ class QuestionsActivity : AppCompatActivity() {
                 binding.answerThree.setOnClickListener{
                     binding.answerThree.setBackgroundColor(Color.parseColor("#EE3A57"))
                     currentScore += 0
+                    nextActivity(questionNumber,category,username,currentScore, questions)
                 }
                 binding.answerFour.setOnClickListener{
                     binding.answerFour.setBackgroundColor(Color.parseColor("#EE3A57"))
@@ -193,44 +189,47 @@ class QuestionsActivity : AppCompatActivity() {
                     if(millisUntilFinished/1000 < 5){
                         binding.timerText.setTextColor(Color.YELLOW)
                         //Hello
-                    }else if (millisUntilFinished/1000 < 3){
+                    }
+                    if (millisUntilFinished/1000 < 3){
                         binding.timerText.setTextColor(Color.RED)
 
-                    } else if(millisUntilFinished/1000 < 1 ){
-                        when (category) {
-                            "Memes" -> {
-                                val questions = getMemeQuestions()
-                                nextActivity(questionNumber,category,username,currentScore, questions)
-                                onFinish()
-                            }
-                            "Music" -> {
-                                val questions = getMusicQuestions()
-                                nextActivity(questionNumber,category,username,currentScore, questions)
-                                onFinish()
-                            }
-                            "Movies and Tv" -> {
-                                val questions = getTvQuestions()
-                                nextActivity(questionNumber,category,username,currentScore, questions)
-                                onFinish()
-                            }
-                            "Celebrities" -> {
-                                val questions = getAllCelebQuestions()
-                                nextActivity(questionNumber,category,username,currentScore, questions)
-                                onFinish()
-                            }
-                            "Logos" -> {
-                                val questions = LogoQuestions()
-                                nextActivity(questionNumber,category,username,currentScore, questions)
-                                onFinish()
-                            }
-                        }
+                    } //else
+
+//                        when (category) {
+//                            "Memes" -> {
+//                                val questions = getMemeQuestions()
+//                                val time: String = binding.timerText.text.toString()
+
+//                                if(time.toInt() === 0){
+//                                    nextActivity(questionNumber,category,username,currentScore, questions)
+//                                    onFinish()
+//                                }
+//
+//                            }
+//                            "Music" -> {
+//                                val questions = getMusicQuestions()
+//                                nextActivity(questionNumber,category,username,currentScore, questions)
+//                            }
+//                            "Movies and Tv" -> {
+//                                val questions = getTvQuestions()
+//                                nextActivity(questionNumber,category,username,currentScore, questions)
+//                            }
+//                            "Celebrities" -> {
+//                                val questions = getAllCelebQuestions()
+//                                nextActivity(questionNumber,category,username,currentScore, questions)
+//                            }
+//                            "Logos" -> {
+//                                val questions = LogoQuestions()
+//                                nextActivity(questionNumber,category,username,currentScore, questions)
+//                            }
+//                        }
                     }
-                }
 
                 override fun onFinish(){
                     binding.timerText.setTextColor(Color.RED)
-                    binding.timerText.text = "TIME IS UP"
+                    binding.timerText.text = "0"
                     Log.i("Values", "$questionNumber,$category,$username,$currentScore")
+
                 }
             }.start()
         }

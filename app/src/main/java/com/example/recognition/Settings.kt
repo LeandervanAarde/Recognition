@@ -3,6 +3,7 @@ package com.example.recognition
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
+import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import com.example.recognition.databinding.ActivitySettingsBinding
 import com.example.recognition.models.CategoryConstants
@@ -13,6 +14,8 @@ class Settings : AppCompatActivity() {
         binding = ActivitySettingsBinding.inflate(layoutInflater)
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
+        window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_FULLSCREEN
+        actionBar?.hide()
         binding.resetScores.setOnClickListener{
             resetScores()
             val intent = Intent(this, HomeScreen::class.java)
