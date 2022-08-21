@@ -126,9 +126,6 @@ Get and beat the highscore in each of the categories that are locally stored, al
 
 ![image4](https://drive.google.com/uc?export=view&id=1tm55oe94wZxuD8tVqSA2FB50OdqiBrzk)
 
-### Talk to other Staff members on the live chat
-Get staff updates and talk to other members to keep up to date with what is happening in the CDE to ensure nothing goes missing, this allows staff members to avoid missing important information and updates based around the CDE.
-
 <!-- CONCEPT PROCESS -->
 <!-- Briefly explain your concept ideation process -->
 <!-- here you will add things like wireframing, data structure planning, anything that shows your process. You need to include images-->
