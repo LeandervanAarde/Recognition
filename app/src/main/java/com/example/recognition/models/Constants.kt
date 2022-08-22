@@ -11,10 +11,11 @@ object Constants {
             1,
             "What is this meme generally associated with hm?",
             R.drawable.download,
-            "WiTh BeInG sTuPiD",
-            "Hillbillies",
             "Being an intellectual",
-            "Spongebob, obviously"
+            "Hillbillies",
+            "WiTh BeInG StuPid",
+            "Spongebob, obviously",
+            "WiTh BeInG StuPid"
         )
 
         val QuestionTwo = Question(
@@ -24,27 +25,30 @@ object Constants {
             "an Interest in another aspect",
             "This guy is whistling",
             "Looking for ticks.",
-            "Meaningless"
+            "Meaningless",
+            "an Interest in another aspect"
         )
 
         val QuestionThree = Question(
             3,
             "What caption does this meme usually have?",
             R.drawable.frymeme,
-            "Not sure if...",
+            "Take my money!",
             "can't tell if...",
             "It might not be...",
-            "Take my money!"
+            "Not sure if...",
+            "Not sure if..."
         )
 
         val QuestionFour = Question(
             4,
             "Who is this monke?",
             R.drawable.harambemonkey,
-            "Harambe",
             "Harembae",
+            "Harambe",
             "MonkeyMan",
-            "This is just a Gorilla."
+            "This is just a Gorilla.",
+            "Harambe"
         )
 
         val QuestionFive = Question(
@@ -54,19 +58,20 @@ object Constants {
             "Chrissy",
             "Eleven",
             "John Cena",
-            "Chistopher"
+            "Chistopher",
+            "Chrissy"
         )
 
         val QuestionSix = Question(
             5,
             "What is her catchPhrase?",
             R.drawable.cashmeoutside,
-            "Catch me outside how 'bout dat?",
+            "Gucci Flip drops",
             "Dr. Phil can go away",
             "I hate my mom",
-            "Gucci Flip drops"
+            "Catch me outside how 'bout dat?",
+            "Catch me outside how 'bout dat?"
         )
-
         MemeQuestions.add(QuestionOne)
         MemeQuestions.add(QuestionTwo)
         MemeQuestions.add(QuestionThree)
@@ -89,17 +94,19 @@ object Constants {
             "Calvin Cordozar Broadus Jr.",
             "Cameron Jibril Thomaz",
             "Willard Carroll",
-            "Dwayne Michael Carter, Jr."
+            "Dwayne Michael Carter, Jr.",
+            "Calvin Cordozar Broadus Jr."
         )
 
         val QuestionTwo = Question(
             2,
             "How old was Britney Spears when her hit song ‘Baby One More Time’ came out in 1998? ",
             R.drawable.britney,
-            "17",
+            "30",
             "18",
             "24",
-            "22"
+            "17",
+            "17"
         )
 
         val QuestionThree = Question(
@@ -109,27 +116,30 @@ object Constants {
             "MC Hammer",
             "Eminem.",
             "Tupac",
-            "Biggie Smalls"
+            "Biggie Smalls",
+            "MC Hammer"
         )
 
         val QuestionFour = Question(
             4,
             "Justin Timberlake wrote what 2002 hit after breaking up with Britney Spears? ",
             R.drawable.justint,
-            "Cry me a river",
-            "Like I love you",
             "Take it from here",
-            "Still on my Brain"
+            "Like I love you",
+            "Cry me a river",
+            "Still on my Brain",
+            "Cry me a river"
         )
 
         val QuestionFive = Question(
             5,
             "I kissed a girl came out in what year?",
             R.drawable.ikissedagirl,
-            "2008",
+            "2004",
             "2007",
-            "2006",
-            "2005"
+            "2008",
+            "2005",
+            "2008"
         )
 
         val QuestionSix = Question(
@@ -139,7 +149,8 @@ object Constants {
             "Detroit",
             "Michigan",
             "Cleveland",
-            "Columbus"
+            "Columbus",
+            "Detroit"
         )
 
         val QuestionSeven = Question(
@@ -149,9 +160,9 @@ object Constants {
             "Avril Lavigne",
             "Britney Spears",
             "Alicia Keys",
-            "Katy Perry"
+            "Katy Perry",
+            "Avril Lavigne"
         )
-
         MusicQuestions.add(QuestionOne)
         MusicQuestions.add(QuestionTwo)
         MusicQuestions.add(QuestionThree)
@@ -175,7 +186,8 @@ object Constants {
             "An entire Casserole",
             "4 pizzas",
             "An entire chicken pot Pie",
-            "12 hotdogs and a Coca-Cola"
+            "12 hotdogs and a Coca-Cola",
+            "An entire chicken pot Pie"
         )
 
         val QuestionTwo = Question(
@@ -183,9 +195,10 @@ object Constants {
             "South Park takes place in which state?",
             R.drawable.southpark,
             "Wisconsin",
-            "Minnesota",
             "Colorado",
-            "Vermont"
+            "Minnesota",
+            "Vermont",
+            "Colorado"
         )
 
         val QuestionThree = Question(
@@ -195,7 +208,8 @@ object Constants {
             "Ned Flanders",
             "Principal Skinner",
             "Mrs. Krabappel",
-            "Miss Hoover"
+            "Miss Hoover",
+            "Mrs. Krabappel"
         )
 
         val QuestionFour = Question(
@@ -204,8 +218,9 @@ object Constants {
             R.drawable.jackie,
             "Hyde",
             "Fes",
+            "Michael",
             "Eric",
-            "Michael"
+        "Eric"
         )
 
         val QuestionFive = Question(
@@ -215,7 +230,8 @@ object Constants {
             "Overdose",
             "Sickness",
             "Pushed infront of a train",
-            "Car crash"
+            "Car crash",
+        "Pushed infront of a train"
         )
 
         val QuestionSix = Question(
@@ -223,19 +239,21 @@ object Constants {
             "On The Big Bang Theory, Penny is a waitress at which restaurant?",
             R.drawable.penny,
             "McDonalds",
-            "Olive garden",
             "Cheesecake Factory",
-            "Hooters"
+            "Olive garden",
+            "Hooters",
+        "Cheesecake Factory"
         )
 
         val QuestionSeven = Question(
             7,
             "What was the name of Ron Burgundy's channel in Anchorman?",
             R.drawable.ronburgundy,
-            "Channel 9",
-            "Channel 5",
             "Channel 4",
-            "Channel 2"
+            "Channel 5",
+            "Channel 9",
+            "Channel 2",
+            "Channel 4"
         )
 
         val QuestionEight = Question(
@@ -243,9 +261,10 @@ object Constants {
             "What is the name of Winston's cat in New Girl?",
             R.drawable.fergusoncat,
             "Spotty",
-            "Ferry",
             "Ferguson",
-            "He had no name"
+            "Ferry",
+            "He had no name",
+            "Ferguson"
         )
 
         tvQuestions.add(QuestionOne)
@@ -256,7 +275,6 @@ object Constants {
         tvQuestions.add(QuestionSix)
         tvQuestions.add(QuestionSeven)
         tvQuestions.add(QuestionEight)
-
         return tvQuestions
     }
 
@@ -270,6 +288,7 @@ object Constants {
             "Speeding",
             "Fighting",
             "He was not arrested in 2013",
+            "Driving under the influence",
             "Driving under the influence"
         )
 
@@ -277,9 +296,10 @@ object Constants {
             2,
             "Michael Jordan starred in what movie?",
             R.drawable.michaelj,
-            "Coach Carter",
+            "Space Jam",
             "Semi pro",
             "Love & basketball",
+            "Coach Carter",
             "Space Jam"
         )
 
@@ -287,10 +307,12 @@ object Constants {
             3,
             "Daniel Radcliffe was the lead of what movie?",
             R.drawable.danielleradc,
-            "Fantastic beasts and where to find them",
+            "Harry Potter",
             "Lord of the rings",
             "Split",
+            "Fantastic beasts and where to find them",
             "Harry Potter"
+
         )
 
         val QuestionFour = Question(
@@ -299,6 +321,7 @@ object Constants {
             R.drawable.slimshady,
             "it was always a nickname",
             "While he was at a bar",
+            "It came to him when he was on the toilet",
             "While reading a comic book",
             "It came to him when he was on the toilet"
         )
@@ -310,6 +333,7 @@ object Constants {
             "12",
             "125",
             "50",
+            "Atleast 63",
             "Atleast 63"
         )
 
@@ -317,10 +341,11 @@ object Constants {
             6,
             "What is the alternative name for Mickey Mouse?",
             R.drawable.mickeym,
-            "Michael Mouse",
+            "Mortimer Mouse",
             "There are none",
             "Mick mouse",
-            "Mortimer Mouse"
+            "Mortimer Mouse",
+            "Michael Mouse"
         )
 
         CelebrityQuestions.add(QuestionOne)
@@ -342,17 +367,19 @@ object Constants {
             "KFC",
             "McDonalds",
             "Taco Bell",
-            "Burger King"
+            "Burger King",
+        "McDonalds"
         )
 
         val QuestionTwo = Question(
             2,
             "What company does this Logo Belong to?",
             R.drawable.jeep,
-            "John Deere",
             "Jeep",
+            "John Deere",
             "Old Khaki",
-            "Safari and Outdoor"
+            "Safari and Outdoor",
+            "Jeep"
         )
 
         val QuestionThree = Question(
@@ -360,9 +387,10 @@ object Constants {
             "What company does this Logo Belong to?",
             R.drawable.dreamworks,
             "20th Century Fox",
-            "DreamWorks",
             "Pixar",
-            "Warner Bros"
+            "DreamWorks",
+            "Warner Bros",
+            "DreamWorks"
         )
 
         val QuestionFour = Question(
@@ -372,7 +400,8 @@ object Constants {
             "Beats",
             "Apple",
             "Nike",
-            "Adidas"
+            "Adidas",
+            "Apple"
         )
 
         val QuestionFive = Question(
@@ -380,17 +409,16 @@ object Constants {
             "What company does this Logo Belong to?",
             R.drawable.twitter,
             "Facebook",
-            "Twitter",
+            "Fake Logo",
             "Instagram",
-            "Fake Logo"
+            "Twitter",
+            "Twitter"
         )
-
         logoQuestion.add(QuestionOne)
         logoQuestion.add(QuestionTwo)
         logoQuestion.add(QuestionThree)
         logoQuestion.add(QuestionFour)
         logoQuestion.add(QuestionFive)
-
         return logoQuestion
     }
 }
