@@ -14,6 +14,7 @@ import com.example.recognition.models.Constants.getAllCelebQuestions
 import com.example.recognition.models.Constants.getMemeQuestions
 import com.example.recognition.models.Constants.getMusicQuestions
 import com.example.recognition.models.Constants.getTvQuestions
+import com.example.recognition.models.Question
 
 class ResultsActivity : AppCompatActivity() {
     private lateinit var binding: ActivityResultsBinding
@@ -49,44 +50,7 @@ class ResultsActivity : AppCompatActivity() {
                 }else{
                     binding.textView4.text = "High Score: $highScore / $length"
                 }
-                for(i in 0 until length){
-                    val question = TextView(this)
-                    question.textSize = 19f
-                    question.setTextColor(Color.parseColor("#FFFFFF"))
-                    question.textAlignment = TextView.TEXT_ALIGNMENT_CENTER
-                    question.text = "Q: ${questions[i].QuestionTxt}"
-                    binding.linearLayoutBrah.addView(question)
-                    Log.i("Q", "${questions[i].QuestionTxt}")
-
-                    val answerOne = TextView(this)
-                    answerOne.textSize = 17f
-                    answerOne.setTextColor(Color.parseColor("#64CB40"))
-                    answerOne.textAlignment = TextView.TEXT_ALIGNMENT_TEXT_START
-                    answerOne.text = "Q: ${questions[i].OptionOne}"
-                    binding.linearLayoutBrah.addView(answerOne)
-
-                    val answerTwo = TextView(this)
-                    answerTwo.textSize = 17f
-                    answerTwo.setTextColor(Color.parseColor("#EE3A57"))
-                    answerTwo.textAlignment = TextView.TEXT_ALIGNMENT_TEXT_START
-                    answerTwo.text = "Q: ${questions[i].OptionTwo}"
-                    binding.linearLayoutBrah.addView(answerTwo)
-
-                    val answerThree = TextView(this)
-                    answerThree.textSize = 17f
-                    answerThree.setTextColor(Color.parseColor("#EE3A57"))
-                    answerThree.textAlignment = TextView.TEXT_ALIGNMENT_TEXT_START
-                    answerThree.text = "Q: ${questions[i].OptionThree}"
-                    binding.linearLayoutBrah.addView(answerThree)
-
-                    val answerFour = TextView(this)
-                    answerFour.textSize = 17f
-                    answerFour.setTextColor(Color.parseColor("#EE3A57"))
-                    answerFour.textAlignment = TextView.TEXT_ALIGNMENT_TEXT_START
-                    answerFour.text = "Q: ${questions[i].OptionFour}"
-
-                    binding.linearLayoutBrah.addView(answerFour)
-                }
+                createResult(questions, length)
             }
             "Music" -> {
                 val length = getMusicQuestions().count()
@@ -104,46 +68,7 @@ class ResultsActivity : AppCompatActivity() {
                 }  else{
                     binding.textView4.text = "High Score: $musicHighScore / $length"
                 }
-
-                for(i in 0 until length){
-
-                    val question = TextView(this)
-                    question.textSize = 19f
-                    question.setTextColor(Color.parseColor("#FFFFFF"))
-                    question.textAlignment = TextView.TEXT_ALIGNMENT_CENTER
-                    question.text = "Q: ${questions[i].QuestionTxt}"
-                    binding.linearLayoutBrah.addView(question)
-                    Log.i("Q", "${questions[i].QuestionTxt}")
-
-                    val answerOne = TextView(this)
-                    answerOne.textSize = 17f
-                    answerOne.setTextColor(Color.parseColor("#64CB40"))
-                    answerOne.textAlignment = TextView.TEXT_ALIGNMENT_TEXT_START
-                    answerOne.text = "Q: ${questions[i].OptionOne}"
-                    binding.linearLayoutBrah.addView(answerOne)
-
-                    val answerTwo = TextView(this)
-                    answerTwo.textSize = 17f
-                    answerTwo.setTextColor(Color.parseColor("#EE3A57"))
-                    answerTwo.textAlignment = TextView.TEXT_ALIGNMENT_TEXT_START
-                    answerTwo.text = "Q: ${questions[i].OptionTwo}"
-                    binding.linearLayoutBrah.addView(answerTwo)
-
-                    val answerThree = TextView(this)
-                    answerThree.textSize = 17f
-                    answerThree.setTextColor(Color.parseColor("#EE3A57"))
-                    answerThree.textAlignment = TextView.TEXT_ALIGNMENT_TEXT_START
-                    answerThree.text = "Q: ${questions[i].OptionThree}"
-                    binding.linearLayoutBrah.addView(answerThree)
-
-                    val answerFour = TextView(this)
-                    answerFour.textSize = 17f
-                    answerFour.setTextColor(Color.parseColor("#EE3A57"))
-                    answerFour.textAlignment = TextView.TEXT_ALIGNMENT_TEXT_START
-                    answerFour.text = "Q: ${questions[i].OptionFour}"
-
-                    binding.linearLayoutBrah.addView(answerFour)
-                }
+                createResult(questions, length)
             }
             "Movies and Tv" -> {
                 val length = getTvQuestions().count()
@@ -161,44 +86,7 @@ class ResultsActivity : AppCompatActivity() {
                 } else{
                     binding.textView4.text = "High Score: $highScore / $length"
                 }
-                for(i in 0 until length){
-                    val question = TextView(this)
-                    question.textSize = 19f
-                    question.setTextColor(Color.parseColor("#FFFFFF"))
-                    question.textAlignment = TextView.TEXT_ALIGNMENT_CENTER
-                    question.text = "Q: ${questions[i].QuestionTxt}"
-                    binding.linearLayoutBrah.addView(question)
-                    Log.i("Q", "${questions[i].QuestionTxt}")
-
-                    val answerOne = TextView(this)
-                    answerOne.textSize = 17f
-                    answerOne.setTextColor(Color.parseColor("#EE3A57"))
-                    answerOne.textAlignment = TextView.TEXT_ALIGNMENT_TEXT_START
-                    answerOne.text = "Q: ${questions[i].OptionOne}"
-                    binding.linearLayoutBrah.addView(answerOne)
-
-                    val answerTwo = TextView(this)
-                    answerTwo.textSize = 17f
-                    answerTwo.setTextColor(Color.parseColor("#EE3A57"))
-                    answerTwo.textAlignment = TextView.TEXT_ALIGNMENT_TEXT_START
-                    answerTwo.text = "Q: ${questions[i].OptionTwo}"
-                    binding.linearLayoutBrah.addView(answerTwo)
-
-                    val answerThree = TextView(this)
-                    answerThree.textSize = 17f
-                    answerThree.setTextColor(Color.parseColor("#64CB40"))
-                    answerThree.textAlignment = TextView.TEXT_ALIGNMENT_TEXT_START
-                    answerThree.text = "Q: ${questions[i].OptionThree}"
-                    binding.linearLayoutBrah.addView(answerThree)
-
-                    val answerFour = TextView(this)
-                    answerFour.textSize = 17f
-                    answerFour.setTextColor(Color.parseColor("#EE3A57"))
-                    answerFour.textAlignment = TextView.TEXT_ALIGNMENT_TEXT_START
-                    answerFour.text = "Q: ${questions[i].OptionFour}"
-
-                    binding.linearLayoutBrah.addView(answerFour)
-                }
+                createResult(questions, length)
             }
             "Celebrities" -> {
                 val questions = getAllCelebQuestions()
@@ -216,45 +104,7 @@ class ResultsActivity : AppCompatActivity() {
                 } else{
                     binding.textView4.text = "High Score: $highScore / $length"
                 }
-                for(i in 0 until length){
-
-                    val question = TextView(this)
-                    question.textSize = 19f
-                    question.setTextColor(Color.parseColor("#FFFFFF"))
-                    question.textAlignment = TextView.TEXT_ALIGNMENT_CENTER
-                    question.text = "Q: ${questions[i].QuestionTxt}"
-                    binding.linearLayoutBrah.addView(question)
-                    Log.i("Q", "${questions[i].QuestionTxt}")
-
-                    val answerOne = TextView(this)
-                    answerOne.textSize = 17f
-                    answerOne.setTextColor(Color.parseColor("#EE3A57"))
-                    answerOne.textAlignment = TextView.TEXT_ALIGNMENT_TEXT_START
-                    answerOne.text = "Q: ${questions[i].OptionOne}"
-                    binding.linearLayoutBrah.addView(answerOne)
-
-                    val answerTwo = TextView(this)
-                    answerTwo.textSize = 17f
-                    answerTwo.setTextColor(Color.parseColor("#EE3A57"))
-                    answerTwo.textAlignment = TextView.TEXT_ALIGNMENT_TEXT_START
-                    answerTwo.text = "Q: ${questions[i].OptionTwo}"
-                    binding.linearLayoutBrah.addView(answerTwo)
-
-                    val answerThree = TextView(this)
-                    answerThree.textSize = 17f
-                    answerThree.setTextColor(Color.parseColor("#EE3A57"))
-                    answerThree.textAlignment = TextView.TEXT_ALIGNMENT_TEXT_START
-                    answerThree.text = "Q: ${questions[i].OptionThree}"
-                    binding.linearLayoutBrah.addView(answerThree)
-
-                    val answerFour = TextView(this)
-                    answerFour.textSize = 17f
-                    answerFour.setTextColor(Color.parseColor("#64CB40"))
-                    answerFour.textAlignment = TextView.TEXT_ALIGNMENT_TEXT_START
-                    answerFour.text = "Q: ${questions[i].OptionFour}"
-
-                    binding.linearLayoutBrah.addView(answerFour)
-                }
+                createResult(questions, length)
             }
             "Logos" -> {
                 val length = LogoQuestions().count()
@@ -272,51 +122,85 @@ class ResultsActivity : AppCompatActivity() {
                 } else{
                     binding.textView4.text = "High Score: $highScore / $length"
                 }
-                for(i in 0 until length){
-
-                    val question = TextView(this)
-                    question.textSize = 19f
-                    question.setTextColor(Color.parseColor("#FFFFFF"))
-                    question.textAlignment = TextView.TEXT_ALIGNMENT_CENTER
-                    question.text = "Q: ${questions[i].QuestionTxt}"
-                    binding.linearLayoutBrah.addView(question)
-                    Log.i("Q", "${questions[i].QuestionTxt}")
-
-                    val answerOne = TextView(this)
-                    answerOne.textSize = 17f
-                    answerOne.setTextColor(Color.parseColor("#EE3A57"))
-                    answerOne.textAlignment = TextView.TEXT_ALIGNMENT_TEXT_START
-                    answerOne.text = "Q: ${questions[i].OptionOne}"
-                    binding.linearLayoutBrah.addView(answerOne)
-
-                    val answerTwo = TextView(this)
-                    answerTwo.textSize = 17f
-                    answerTwo.setTextColor(Color.parseColor("#64CB40"))
-                    answerTwo.textAlignment = TextView.TEXT_ALIGNMENT_TEXT_START
-                    answerTwo.text = "Q: ${questions[i].OptionTwo}"
-                    binding.linearLayoutBrah.addView(answerTwo)
-
-                    val answerThree = TextView(this)
-                    answerThree.textSize = 17f
-                    answerThree.setTextColor(Color.parseColor("#EE3A57"))
-                    answerThree.textAlignment = TextView.TEXT_ALIGNMENT_TEXT_START
-                    answerThree.text = "Q: ${questions[i].OptionThree}"
-                    binding.linearLayoutBrah.addView(answerThree)
-
-                    val answerFour = TextView(this)
-                    answerFour.textSize = 17f
-                    answerFour.setTextColor(Color.parseColor("#EE3A57"))
-                    answerFour.textAlignment = TextView.TEXT_ALIGNMENT_TEXT_START
-                    answerFour.text = "Q: ${questions[i].OptionFour}"
-                    binding.linearLayoutBrah.addView(answerFour)
-                }
+                createResult(questions, length)
             }
         }
-
         binding.goHome.setOnClickListener{
             val intent = Intent(this, HomeScreen::class.java)
             startActivity(intent)
             finish()
+        }
+    }
+    fun createResult(questions: ArrayList <Question>, length: Int){
+        for(i in 0 until length){
+            val question = TextView(this)
+            question.textSize = 19f
+            question.setTextColor(Color.parseColor("#FFFFFF"))
+            question.textAlignment = TextView.TEXT_ALIGNMENT_CENTER
+            question.text = "Q: ${questions[i].QuestionTxt}"
+            binding.linearLayoutBrah.addView(question)
+            Log.i("Q", "${questions[i].QuestionTxt}")
+
+            if(questions[i].OptionOne == questions[i].correctAnswer){
+                val answerOne = TextView(this)
+                answerOne.textSize = 17f
+                answerOne.setTextColor(Color.parseColor("#64CB40"))
+                answerOne.textAlignment = TextView.TEXT_ALIGNMENT_TEXT_START
+                answerOne.text = "Q: ${questions[i].OptionOne}"
+                binding.linearLayoutBrah.addView(answerOne)
+            } else {
+                val answerOne = TextView(this)
+                answerOne.textSize = 17f
+                answerOne.setTextColor(Color.parseColor("#EE3A57"))
+                answerOne.textAlignment = TextView.TEXT_ALIGNMENT_TEXT_START
+                answerOne.text = "Q: ${questions[i].OptionOne}"
+                binding.linearLayoutBrah.addView(answerOne)
+            }
+            if(questions[i].OptionTwo == questions[i].correctAnswer){
+                val answerTwo = TextView(this)
+                answerTwo.textSize = 17f
+                answerTwo.setTextColor(Color.parseColor("#64CB40"))
+                answerTwo.textAlignment = TextView.TEXT_ALIGNMENT_TEXT_START
+                answerTwo.text = "Q: ${questions[i].OptionTwo}"
+                binding.linearLayoutBrah.addView(answerTwo)
+            } else {
+                val answerTwo = TextView(this)
+                answerTwo.textSize = 17f
+                answerTwo.setTextColor(Color.parseColor("#EE3A57"))
+                answerTwo.textAlignment = TextView.TEXT_ALIGNMENT_TEXT_START
+                answerTwo.text = "Q: ${questions[i].OptionTwo}"
+                binding.linearLayoutBrah.addView(answerTwo)
+            }
+            if(questions[i].OptionThree == questions[i].correctAnswer){
+                val answerThree = TextView(this)
+                answerThree.textSize = 17f
+                answerThree.setTextColor(Color.parseColor("#64CB40"))
+                answerThree.textAlignment = TextView.TEXT_ALIGNMENT_TEXT_START
+                answerThree.text = "Q: ${questions[i].OptionThree}"
+                binding.linearLayoutBrah.addView(answerThree)
+            } else {
+                val answerThree = TextView(this)
+                answerThree.textSize = 17f
+                answerThree.setTextColor(Color.parseColor("#EE3A57"))
+                answerThree.textAlignment = TextView.TEXT_ALIGNMENT_TEXT_START
+                answerThree.text = "Q: ${questions[i].OptionThree}"
+                binding.linearLayoutBrah.addView(answerThree)
+            }
+            if(questions[i].OptionFour == questions[i].correctAnswer){
+                val answerFour = TextView(this)
+                answerFour.textSize = 17f
+                answerFour.setTextColor(Color.parseColor("#64CB40"))
+                answerFour.textAlignment = TextView.TEXT_ALIGNMENT_TEXT_START
+                answerFour.text = "Q: ${questions[i].OptionFour}"
+                binding.linearLayoutBrah.addView(answerFour)
+            } else {
+                val answerFour = TextView(this)
+                answerFour.textSize = 17f
+                answerFour.setTextColor(Color.parseColor("#EE3A57"))
+                answerFour.textAlignment = TextView.TEXT_ALIGNMENT_TEXT_START
+                answerFour.text = "Q: ${questions[i].OptionFour}"
+                binding.linearLayoutBrah.addView(answerFour)
+            }
         }
     }
 }

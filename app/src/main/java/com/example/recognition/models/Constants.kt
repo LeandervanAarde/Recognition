@@ -344,8 +344,8 @@ object Constants {
             "Mortimer Mouse",
             "There are none",
             "Mick mouse",
-            "Mortimer Mouse",
-            "Michael Mouse"
+            "Michael Mouse",
+            "Mortimer Mouse"
         )
 
         CelebrityQuestions.add(QuestionOne)

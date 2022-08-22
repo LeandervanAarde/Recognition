@@ -25,7 +25,6 @@ class QuestionsActivity : AppCompatActivity() {
         var questionNumber: Int = intent.getIntExtra("number", 0)
         var currentScore = intent.getIntExtra("currentScore", 0)
         var amountOfQ = 0
-
         Log.i("InitialVals", "$questionNumber,$category,$username,$currentScore")
         Log.i("Category Name", category)
         window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_FULLSCREEN
@@ -40,7 +39,6 @@ class QuestionsActivity : AppCompatActivity() {
                     binding.timerText.setTextColor(Color.RED)
                 }
             }
-
             override fun onFinish(){
                 binding.timerText.setTextColor(Color.RED)
                 binding.timerText.text = "0"
@@ -48,7 +46,6 @@ class QuestionsActivity : AppCompatActivity() {
                 nextActivity(questionNumber,category,username,currentScore, amountOfQ)
             }
         }
-
         timer.start()
 
         when (category) {

@@ -2,6 +2,7 @@ package com.example.recognition
 
 import android.content.Context
 import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
@@ -22,11 +23,14 @@ class Settings : AppCompatActivity() {
             startActivity(intent)
             finish()
         }
+        binding.github.setOnClickListener{
+            val intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/LeandervanAarde/Recognition"))
+            startActivity((intent))
+        }
     }
     private fun resetScores(){
         val Preference = getSharedPreferences("Preference", Context.MODE_PRIVATE)
         val editor = Preference.edit()
-
         editor.apply{
             putInt(CategoryConstants.MEME_HIGH_SCORE, 0)
             putInt(CategoryConstants.MUSIC_HIGH_SCORE, 0)
